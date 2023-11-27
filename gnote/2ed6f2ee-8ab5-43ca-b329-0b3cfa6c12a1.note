@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>ImageMagick</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">ImageMagick
+
+magick = convert
+
+// свойства
+magick DSCN2924.jpg info:-
+magick DSCN2924.jpg -verbose info:-
+magick DSCN2924.jpg -format '%Q' info:-
+magick DSCN2924.jpg -format '%G' info:-
+identify -format &quot;%f %w %h&quot; somedir/*
+
+// снимка всего экрана
+import -window root screen.ps
+
+// Конвертация
+magick MyhomeLib_Icon.ico MyhomeLib.png
+magick input.pdf output.jpg
+magick -density 300 -quality 100 in.pdf out.jpg
+magick КАРТИНКА.jpg РЕЗУЛЬТАТ.pdf
+magick *.jpg out.pdf
+
+// вырезать нужную область 2188,95
+magick DSCN2924.jpg -crop 248x312+2188+95 +repage out.png
+magick DSCN2924.jpg -crop 248x312+2188+95 DSC.png
+magick -extract 500x400+300+150 IMAGE.jpg +repage test21.jpg
+
+// шум
+magick out.png -statistic NonPeak 3 avatar.png
+-enhance Цифровой фильтр для улучшения зашумленного изображения
+&quot;-mean-shift 7x7+10%&quot; Удаление шума на изображении, сегментация цвета
+-wavelet-denoise threshold x softness Удаляет шум из изображения с помощью вейвлет
+-despeckle Удаляет пятнышки на изображении
+		
+
+// чёткость
+magick DSCN2924.jpg -unsharp 0.25x0.25+8+0.065 out.png
+magick DSCN2924.jpg -unsharp 0.25x0.08+8.3+0.045 out.png
+-sharpen radius{x sigma}   Увеличивает резкость изображения
+
+
+// размер
+magick DSCN2924.jpg -resize 100×150 test.png
+magick DSCN2924.jpg -sample 80x40  test.png
+magick DSCN2924.jpg -scale 1080x566 test.png</note-content>
+</text><last-change-date>2023-11-03T07:46:08,863874Z</last-change-date><last-metadata-change-date>2023-11-03T07:46:08,863874Z</last-metadata-change-date><create-date>2022-09-14T05:31:09,477114Z</create-date><cursor-position>224</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

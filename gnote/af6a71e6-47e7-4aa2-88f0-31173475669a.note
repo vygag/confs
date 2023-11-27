@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>blb2txt</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">blb2txt
+
+wine cmd
+exit
+
+blb2txt.exe -f *.fb2 -sn -es 1 -rs -rh -rl -rp -rc -ocr -ap -e utf8
+blb2txt.exe -f speznaz.pdf -sn -es 1 -rs -rh -rl -rp -rc -ocr -ap -e utf8
+
+-f   speznaz.pdf  *.fb2 
+-fl  &lt;имя_файла&gt;    Открыть файл со списком текстовых файлов
+-v   &lt;имя_папки&gt;    Имя папки для сохранения файла с извлеченным текстом.
+-p   &lt;текст&gt;        Шаблон для имени файла с извлеченным текстом
+-ext &lt;текст&gt;        Расширение имени файла с извлеченным текстом
+-s                  Искать файлы в подкаталогах
+-u                  Объединить текст из нескольких файлов в один файл
+-d   &lt;имя_файла&gt;    Применить правила для коррекции произношения из словаря
+
+
+-sn                 Игнорировать список примечаний в конце файлов
+-es   &lt;число&gt;       Извлечь аннотацию из файлов
+-rs                 Удалить лишние пробелы
+-rh                 Удалить знаки переноса на концах строк в тексте
+-rl                 Удалить разрывы строк внутри абзацев
+-rp                 Заменить несколько пустых строк одной пустой строкой
+-rc                 Удалить комментарии
+-ocr                Исправить ошибки
+-ap                 Добавить точку
+-e    utf8          Кодировка файла с извлеченным текстом ansi unicode
+
+
+-rm                 Удалить все пустые строки
+-in   &lt;число&gt;       Добавить сноски и примечания внутрь текста
+       0            удалить ссылки на примечания из текста&#13;
+       1            сохранить текущие позиции сносок и примечаний в тексте&#13;
+       2            переместить сноски и примечания в конец предложений&#13;
+       3            переместить сноски и примечания в конец абзацев
+-rpn                Удалить номера страниц 
+-ls                 Убрать разрядку в словах п р о б е л, _с_л_о_в_о
+-rsb                Удалить текст внутри [квадратных скобок]
+-rcb                Удалить текст внутри {фигурных скобок}
+-rab                Удалить текст внутри &lt;угловых скобок&gt;
+-rrb                Удалить текст внутри (круглых скобок)
+</note-content>
+</text><last-change-date>2023-11-05T08:50:56,040595Z</last-change-date><last-metadata-change-date>2023-11-05T08:50:56,040595Z</last-metadata-change-date><create-date>2023-06-18T14:38:29,856279Z</create-date><cursor-position>165</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>pacman</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">pacman
+
+sudo nano /etc/pacman.conf
+sudo nano /etc/pacman.conf.pacnew
+sudo rm -v /etc/pacman.conf.pacnew
+
+sudo cp /etc/pacman.conf /etc/pacman.conf.pacnew
+sudo pacman -Syu &quot;pacman&gt;=6.0.2-7&quot;
+
+// Выбор зеркал для загрузки
+https://wiki.archlinux.org/title/Mirrors_(Русский)
+/etc/pacman.d/mirrorlist
+/etc/pacman.d/mirrorlist.pacnew
+
+// Наиболее свежий список зеркал
+https://archlinux.org/mirrorlist/
+// Проверить статус зеркал
+https://archlinux.org/mirrors/status/
+Successfully Syncing Mirrors
+
+6 наиболее подходящих зеркал
+sudo nano /etc/pacman.d/mirrorlist
+
+reflector -p https,http -l 6 --sort rate --save /etc/pacman.d/mirrorlist
+
+sudo pacman -Syu
+sudo pacman -S lifeograph
+sudo pacman -Sw dkms                    Загрузить пакет но не устанавливать
+sudo pacman -U пакет                    Установить пакет локально или через URL
+sudo pacman -R file-roller
+sudo pacman -Rn dunst                   Удалить пакет и конфиги
+sudo pacman -Rs id3v2                   Удалить пакет и зависимости
+sudo pacman -Rc id3v2                   Удалить пакет и все заисящие пакеты
+sudo pacman -Rsn telegram-desktop       Удалить пакет зависимости и конфиги
+sudo pacman -Rsu пакет                  удалении группы
+
+pacman -Ss polkit                     Поиск пакетов
+pacman -Qs rhvoice                      Поиск только среди установленных
+pacman -Qe rtl8192eu                    Пакеты установленные явно
+pacman -Qqe &gt; pkg.txt                   Список всех установленных пакетов
+pacman -Qs &gt; pkgpac.txt                 Список всех установленных пакетов
+pacman -Ql rtl8192eu                    Список файлов пакета
+pacman -Si rtl8192eu                    Информация о пакете
+pacman -Qi rtl8192eu                    для установленных пакетов
+pacman -Qo /путь/к/файлу/имя_файла      какому пакету принадлежит нужный файл
+pacman -Sg gnome                        список пакетов принадлежащих к группе
+pacman -F rtl8192eu                     по названию файла
+pacman -Fl rtl8192eu                    список файлов пакета
+pacman -Qk
+
+pkgfile -u
+pkgfile -l wine
+
+sudo pacman -Sc		                Очистка кэша неустановленных пакетов
+sudo pacman -Scc		        Полностью очистить каталог кэша
+sudo mc /var/cache/pacman/pkg/
+
+</note-content>
+</text><last-change-date>2023-11-17T03:50:31,641302Z</last-change-date><last-metadata-change-date>2023-11-17T03:50:31,641302Z</last-metadata-change-date><create-date>2022-06-16T06:28:23,817115Z</create-date><cursor-position>8</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

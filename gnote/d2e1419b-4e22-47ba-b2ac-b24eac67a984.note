@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>bc</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">bc
+
++ - * / %  2.5
+quit
+
+echo &quot;45-26&quot; | bc
+</note-content>
+</text><last-change-date>2023-04-05T04:26:56,094882Z</last-change-date><last-metadata-change-date>2023-04-05T04:26:56,094882Z</last-metadata-change-date><create-date>2022-05-15T03:30:54,716949Z</create-date><cursor-position>25</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

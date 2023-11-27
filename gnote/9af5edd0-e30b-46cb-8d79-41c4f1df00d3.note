@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>windows</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">windows
+
+аудиокниги
+wget http://www.cross-plus-a.com/balabolka_portable.zip       v2.15.0.835
+wget http://www.cross-plus-a.com/balcon.zip
+wget http://www.cross-plus-a.com/blb2txt.zip                   v1.108
+wget http://www.cross-plus-a.com/bal4yndx.zip                  1.78
+wget http://aloys.narod.ru/Demagog.zip                         7.30.402
+https://www.rarewares.org/mp3-lame-bundle.php                  3.100.1
+http://www.aimp.ru/?do=download&amp;os=windows                    v5.00, build 2344
+http://www.chrysocome.net/dd
+
+https://mozilla-russia.org/products/firefox/                  95.0
+https://mozilla-russia.org/products/thunderbird/
+https://eternallybored.org/misc/wget/                          1.21.1
+wget https://yt-dl.org/downloads/latest/youtube-dl.exe      2021.06.06
+https://github.com/yt-dlp/yt-dlp/releases
+wget https://github.com/yt-dlp/yt-dlp/releases/download/2021.12.01/yt-dlp.exe
+wget https://github.com/yt-dlp/yt-dlp/releases/download/2021.12.01/yt-dlp_x86.exe
+https://mpv.io/installation/
+https://transmissionbt.com/download/
+
+wget https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z
+wget https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z
+
+https://7-zip.org/download.html
+https://www.geany.org/</note-content>
+</text><last-change-date>2023-03-20T05:21:12,602053Z</last-change-date><last-metadata-change-date>2023-03-20T05:21:12,602053Z</last-metadata-change-date><create-date>2021-09-04T02:29:41,000000Z</create-date><cursor-position>1051</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Заметки</tag></tags></note>
+

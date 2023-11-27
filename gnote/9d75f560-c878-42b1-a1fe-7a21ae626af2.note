@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>transmission</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">transmission
+
+aria2c -S Triggernye.torrent
+aria2c -j1 -V Poslednyaya_tayna_reyha_Aleksandr_Tamonikov.torrent
+aria2c -j1 -V Bender_Nachalo.torrent -d /media/vyga/data/new/
+aria2c -j1 -V Kompyuter_i_noutbuk_dlya_teh_komu_za.torrent -d /media/data
+-i Из файла
+Ctrl-C
+
+transmission-cli -w /media/hdd/аудиокниги/ *.torrent
+transmission-cli -w /media/hdd/аудиокниги/new/ *.torrent
+
+transmission-cli -w /media/hdd/видео/ *.torrent
+transmission-cli -w /media/hdd/видео/порно/ *.torrent
+transmission-cli -w /media/hdd/видео/фильм/ *.torrent
+transmission-cli -w /media/hdd/видео/наука/ *.torrent
+transmission-cli -w /media/hdd/видео/n/ *.torrent
+transmission-cli -w /media/hdd/видео/new/ *.torrent
+transmission-cli -w /media/hdd/видео/зож/ *.torrent
+
+transmission-cli -w /media/hdd/книги/ *.torrent
+transmission-cli -w /media/hdd/книги/зож/ *.torrent
+transmission-cli -w /media/hdd/книги/комп/ *.torrent
+transmission-cli -w /media/hdd/книги/литра/ *.torrent
+transmission-cli -w /media/hdd/книги/наука/ *.torrent
+transmission-cli -w /media/hdd/книги/Linux/ *.torrent
+
+transmission-cli -w /media/hdd/Инфа/ *.torrent
+
+transmission-cli -w /media/hdd/Софт/windows/ *.torrent
+transmission-cli -w /media/hdd/софт/android/ *.torrent
+transmission-cli -w /media/hdd/софт/linux/ *.torrent
+
+transmission-cli Trubka-Megre.torrent -w ./
+</note-content>
+</text><last-change-date>2023-05-24T12:35:16,477159Z</last-change-date><last-metadata-change-date>2023-05-24T12:35:16,477159Z</last-metadata-change-date><create-date>2021-11-05T05:26:19,000000Z</create-date><cursor-position>265</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

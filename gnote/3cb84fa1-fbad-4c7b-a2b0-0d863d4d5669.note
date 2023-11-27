@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>wodim</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">wodim
+
+wodim являющийся форком программы cdrecord в cdrtools.
+icedax являющийся форком программы cdda2wav в cdrtools.
+genisoimage являющийся форком программы mkisofs в cdrtools
+growisofs работы с DVD и Blu-ray дисками
+
+cdrecord -v -sao dev=/dev/sr0 isoimage.iso
+
+growisofs -dvd-compat -Z /dev/sr0=isoimage.iso
+
+Убедитесь, что носитель не смонтирован, когда вы начнете записывать на него
+umount /dev/sr0
+
+wodim [ general options ] dev=device [ track options ] track1...trackn
+sudo apt install wodim
+wodim -devices Получение списка устройств
+sudo wodim dev=/dev/sdb blank=fast Стирание перезаписываемого диска
+
+genisoimage -o myImage.iso -r -J -l directory
+genisoimage -f -v -J -o mycd.iso /mnt/somedisk/temp
+
+sudo mount -t iso9660 image.iso /mnt -o loop=/dev/loop0 проверить созданный образ
+
+sudo wodim -v -dao speed=4 dev=/dev/sr0 archlinux-2023.03.01-x86_64.iso
+-v (-verbose) – включает вывод информации о процессе записи;
+-dao – запись диска в режиме Disc-At-Once (DAO), т.е. дозаписать какие-либо данные на этот диск будет невозможно;
+speed=4 – скорость записи
+speed=значение — задает скорость записи
+eject - &quot;выплюнуть&quot; диск из привода после записи
+ -format — форматировать болванку CD/DVD-RW.
+blank=режим — очистка содержимого CD-RW. Доступные режимы: all (полная очистка, долго), fast (быстро), session (очистить последнюю сессию)
+
+dd if=/dev/cdrom of=disk.iso status=progress скопировать cdrom в файл iso
+
+wodim -eject -tao speed=16 dev=/dev/scd0 -v -data /home/user/image.iso
+
+wodim -v -pad speed=1 dev=/dev/cdrw -dao -swab *.wav  Записать аудио
+
+growisofs работы с DVD и Blu-ray дисками
+growisofs -dvd-compat -Z /dev/dvd=image.iso
+cdrdao
+
+genisoimage 
+
+wodim -v -dao speed=4 dev=/dev/sr0 archlinux-2023.03.01-x86_64.iso</note-content>
+</text><last-change-date>2023-05-10T14:03:42,183832Z</last-change-date><last-metadata-change-date>2023-05-10T14:03:42,183832Z</last-metadata-change-date><create-date>2022-05-29T01:51:41,597878Z</create-date><cursor-position>387</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

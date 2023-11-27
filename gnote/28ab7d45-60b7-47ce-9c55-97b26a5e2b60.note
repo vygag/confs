@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Автоlogin</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Автоlogin
+
+sudo <link:internal>nano</link:internal> <link:url>/etc/lightdm/lightdm.conf</link:url>
+F6 autologin-user
+autologin-user=vyga
+autologin-user-timeout=0
+
+autologin-guest=false
+autologin-user=vyga
+autologin-user-timeout=0
+autologin-session=lightdm-autologin
+
+sudo <link:internal>nano</link:internal> <link:url>/usr/share/lightdm/lightdm.conf.d/01_debian.conf</link:url>
+[SeatDefaults]
+autologin-user=ЗАМЕНИТЬ_НА_ЛОГИН
+autologin-user-timeout=0
+
+какой используется менеджер отображения
+systemctl status display-manager.service
+Light Display Manager
+lightdm
+Автоматический вход в LightDM
+sudo <link:internal>nano</link:internal> <link:url>/etc/lightdm/lightdm.conf</link:url>
+раздел [Seat:*] или  [SeatDefaults]
+#autologin-user=vyga
+#autologin-user-timeout=0
+
+<link:url>https://zalinux.ru/?p=1774</link:url>
+Настройка автоматического входа в XFCE
+sudo <link:internal>nano</link:internal> <link:url>/etc/lightdm/lightdm.conf</link:url>
+[Seat:*]
+pam-service=lightdm
+pam-autologin-service=lightdm-autologin
+autologin-user=vyga
+autologin-user-timeout=0
+session-wrapper=/etc/X11/Xsession
+greeter-session=lightdm-greeter
+Также нужно создать группу autologin и добавить в неё вашего пользователя
+sudo groupadd -r autologin
+sudo gpasswd -a vyga autologin</note-content>
+</text><last-change-date>2022-05-14T12:11:28,442650Z</last-change-date><last-metadata-change-date>2022-05-14T12:11:28,447010Z</last-metadata-change-date><create-date>2022-05-14T12:10:35,475659Z</create-date><cursor-position>388</cursor-position><selection-bound-position>397</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

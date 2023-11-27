@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>grub</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">grub
+
+https://computer76.ru/2018/02/22/propala-windows-iz-grub/
+https://wiki.gentoo.org/wiki/GRUB2_Quick_Start/ru
+https://altarena.ru/kak-dobavit-v-grub2-zagruzku-windows-10/
+https://rucore.net/osnovy-nachalnogo-zagruzchika-sistemy-grub-i-grub2-vvedenie-i-nastrojka/
+
+os-prober
+ntfs3g
+nano /etc/default/grub
+GRUB_DISABLE_OS_PROBER=false
+GRUB_DISABLE_OS_PROBER=&quot;false&quot;
+update-grub
+update-grub2
+grub2-mkconfig -o /boot/grub2/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig
+/etc/grub.d/40_custom
+/boot/grub/custom.cfg
+/etc/grub.d/41_custom
+
+Чтобы автоматически добавлять записи для других установленных операционных систем, см. раздел #Обнаружение других операционных систем.
+
+Вы можете добавить дополнительные пользовательские пункты меню, отредактировав файл /etc/grub.d/40_custom и повторно создав файл /boot/grub/grub.cfg. Или вы можете создать файл /boot/grub/custom.cfg и добавить их туда. Изменения в /boot/grub/custom.cfg не требуют повторного запуска grub-mkconfig, поскольку /etc/grub.d/41_custom добавляет необходимый исходный оператор в сгенерированный конфигурационный файл
+Совет: /etc/grub.d/40_custom можно использовать в качестве шаблона для создания /etc/grub.d/nn_custom, где nn определяет приоритет, указывающий порядок выполнения скрипта. Порядок выполнения скриптов определяет их размещение в меню загрузки GRUB. nn должно быть больше 06, чтобы гарантировать, что необходимые скрипты будут выполнены в первую очередь
+Чтобы grub-mkconfig выполнял поиск других установленных систем и автоматически добавлял их в меню, установите пакет os-prober и смонтируйте разделы, с которых загружаются другие системы. Затем повторно запустите grub-mkconfig. Если вы получите следующий вывод: Предупреждение: os-prober не будет выполняться для обнаружения других загрузочных разделов, затем отредактируйте /etc/default/grub и добавьте/раскомментируйте
+Точная точка монтирования не имеет значения, os-prober считывает mtab, чтобы определить места для поиска загрузочных записей.
+Не забывайте монтировать разделы каждый раз, когда вы запускаете grub-mkconfig, чтобы каждый раз включать другие операционные системы.
+
+if [ &quot;${grub_platform}&quot; == &quot;pc&quot; ]; then
+	menuentry &quot;Microsoft Windows Vista/7/8/8.1/10 BIOS/MBR&quot; {
+		insmod part_msdos
+		insmod ntfs
+		insmod ntldr
+		search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos1 --hint-efi=hd0,msdos1 --hint-baremetal=ahci0,msdos1 XXXXXXXXXXXXXXXX
+		ntldr /bootmgr
+	}
+fi</note-content>
+</text><last-change-date>2022-07-10T03:26:03,540251Z</last-change-date><last-metadata-change-date>2022-07-10T03:26:03,540251Z</last-metadata-change-date><create-date>2022-07-10T02:28:07,623497Z</create-date><cursor-position>2230</cursor-position><selection-bound-position>2236</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

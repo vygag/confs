@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>udisksctl</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">udisksctl
+
+udisksctl mount -b /dev/sda3
+udisksctl unmount -b /dev/sda3
+
+sudo mount -t ntfs3 /dev/sda5 /mnt/dat
+sudo umount /dev/sda5
+
+sudo mount /dev/sdc1 /mnt/usb
+sudo umount /dev/sdc1
+
+udisksctl power-off -b /dev/sdb
+
+
+# Принудительное размонтирование usb
+df -h
+lsblk
+fuser -k -m /media/dat
+udisksctl unmount -b /dev/sdb
+udisksctl power-off -b /dev/sdb
+
+sudo umount -f /media/dat
+sudo umount /media/dat</note-content>
+</text><last-change-date>2023-09-30T08:01:19,612538Z</last-change-date><last-metadata-change-date>2023-09-30T08:01:19,612538Z</last-metadata-change-date><create-date>2022-10-16T02:19:21,188044Z</create-date><cursor-position>264</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

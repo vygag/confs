@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>date</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">date
+
+// установить время
+sudo date -s 09:12
+sudo hwclock -w
+
+// Устанавливаем дату: февраль02 21вторник время20:50 2017года
+sudo date 02 21 2050 2017
+sudo date 022120502017
+
+// Установка часов
+timedatectl
+Time zone – часовой пояс.
+System clock synchronized – синхронизация часов с сервером.
+NTP service – подключение к серверу точного времени
+
+timedatectl set-time &quot;20:43:36&quot;
+timedatectl set-time &quot;гггг-мм-дд чч:мм:сс&quot;
+sudo timedatectl set-time &quot;2023-04-12 14:59:00&quot;
+
+// Аппаратные часы биос
+sudo hwclock
+sudo hwclock -r           отобразить часы реального времени
+sudo hwclock -s           копирования биос часов в системные
+sudo hwclock -w           копирования системных часов в биос
+sudo hwclock -l           localtime
+sudo hwclock --set --date=&quot;2023-04-19 07:32:00&quot;
+
+// Аппаратные часы биос = системные часы
+sudo hwclock --systohc
+// Отключить utc
+sudo timedatectl set-local-rtc 1
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+sudo timedatectl set-ntp no</note-content>
+</text><last-change-date>2023-06-07T04:06:52,341367Z</last-change-date><last-metadata-change-date>2023-06-07T04:06:52,341367Z</last-metadata-change-date><create-date>2023-04-10T07:33:31,231439Z</create-date><cursor-position>641</cursor-position><selection-bound-position>642</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

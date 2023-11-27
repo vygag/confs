@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>vi</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">vi
+
+Для поиска по всему файлу используйте команду /
+Для поиска следующего вхождения используйте n
+для предыдущего - N
+i,  режим редактирования
+
+i - вставить текст с позиции курсора
+Esc, чтобы перейти в командный режим
+:w - сохранить файл;
+:q - закрыть редактор;
+:q! - закрыть редактор без сохранения
+:wq. Записать и выйти</note-content>
+</text><last-change-date>2022-06-01T06:03:19,091397Z</last-change-date><last-metadata-change-date>2022-06-01T06:03:19,091397Z</last-metadata-change-date><create-date>2022-06-01T06:02:58,090298Z</create-date><cursor-position>321</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

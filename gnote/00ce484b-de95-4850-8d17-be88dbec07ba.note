@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>уровень сигнала Wi-fi</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">уровень сигнала Wi-fi
+
+iwconfig wlp5s0 | grep level
+iwconfig wlp5s0 | grep -P 'Rate|level'
+
+watch -n 10 'iwconfig wlp5s0 | grep level'
+watch -n 10 &quot;iwconfig wlp5s0 | grep -P 'Rate|level'&quot;
+
+watch -n 10 «iwlist wlp5s0 scan | grep -P 'level|Rates|ESSID'»
+
+30 dBm = 100% 29
+31 dBm =  99%
+32 dBm =  98%
+33 dBm =  97%
+34 dBm =  96%
+40 dBm =  90%
+50 dBm =  80%
+60 dBm =  70%
+70 dBm =  60%
+80 dBm =  50%
+90 dBm =  40%
+95 dBm =  35%</note-content>
+</text><last-change-date>2021-09-02T06:30:47,000000Z</last-change-date><last-metadata-change-date>2021-09-02T06:30:47,000000Z</last-metadata-change-date><create-date>2021-09-02T06:30:25,000000Z</create-date><cursor-position>423</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

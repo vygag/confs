@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>tesseract</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">tesseract
+
+tesseract hen-wlad-fy-nhadau.png anthem -l cym --dpi 150
+tesseract image.png textfile -l eng+rus+ukr
+
+tesseract 1645016756117085975.jpg scrot -l rus
+tesseract scrot.png scrot -l rus+eng
+tesseract scrot.png scrot -l eng+rus
+
+tesseract-data-osd
+gimagereader-gtk
+
+https://github.com/tesseract-ocr/tesseract
+https://tesseract-ocr.github.io/tessdoc/
+https://toadmin.ru/как-сделать-ocr-из-командной-строки-linux-с-по/
+https://sredalinux.blogspot.com/2018/10/tesseract-ocr-ubuntu-1604.html
+https://habr.com/ru/company/rosatom/blog/669020/
+https://linuxhint.com/install-tesseract-ocr-linux/
+http://www.opennet.ru//base/rus/osr_tesseract_rus.txt.html</note-content>
+</text><last-change-date>2023-08-15T04:36:35,878793Z</last-change-date><last-metadata-change-date>2023-08-15T04:36:35,878793Z</last-metadata-change-date><create-date>2022-12-07T06:26:32,350428Z</create-date><cursor-position>113</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

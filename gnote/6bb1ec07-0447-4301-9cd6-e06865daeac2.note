@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>p7zip</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">p7zip
+
+tar
+-x 	Извлечь файлы из архива
+-c 	Создать новый архив
+-A 	Присоединить существующий архив к другому
+-v 	Выводить подробную информацию процесса
+-t 	list
+tar -cv archive.tar file1 file2 file3
+tar -t archive.tar
+tar -xvf 8192eu.ko.zst
+
+// Распаковать
+7z x 8192eu.ko.zst
+7z x Far30b6060.x64.20221208.7z -oFar
+
+// Упаковать
+7z a mail2.7z .thunderbird
+7z a archive myfile1.txt myfile2.txt myfile3.txt
+7z a Lopa.7z /home/vyga/foto/Lopa
+
+// Cписок
+7z l Lopa.7z
+
+// Для проверки целостности архива
+7z t Lopa.7z
+
+
+./7zz
+./7zz x archive.7z
+
+</note-content>
+</text><last-change-date>2023-05-27T06:03:48,132193Z</last-change-date><last-metadata-change-date>2023-05-27T06:03:48,132193Z</last-metadata-change-date><create-date>2022-05-23T03:24:43,463058Z</create-date><cursor-position>307</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

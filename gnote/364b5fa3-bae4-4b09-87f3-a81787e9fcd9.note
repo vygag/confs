@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>флешки</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">флешки
+&#13;
+sudo parted&#13;
+sudo umount -A /dev/sdc&#13;
+&#13;
+Вывести список дисков вы можете командой&#13;
+sudo fdisk -l
+&#13;
+Удаляем все разделы и файловые системы с указанного устройства:&#13;
+sudo wipefs --all /dev/sdc&#13;
+&#13;
+С помощью dd удалите таблицу разделов&#13;
+sudo dd if=/dev/zero of=/dev/sdb bs=1M count=1
+
+sudo fdisk /dev/sdc
+n - создать новый раздел&#13;
+p
+1
+w - записать новую таблицу разделов на диск
+
+sudo cfdisk /dev/sdb
+Выберите тип метки
+dos
+Свободное пространство - Новый
+&#13;
+форматировать USB флешку в файловую систему FAT32&#13;
+sudo mkfs.vfat /dev/sdb1
+
+Присвоить метку тома флешке
+sudo fatlabel /dev/sdc1 archl
+
+записать образ на флэшку
+sudo dd if=antiX-21_x64-base.iso of=/dev/sdc
+
+https://wiki.archlinux.org/title/Persistent_block_device_naming_(Русский)
+пакет e2fsprogs            e2label       ext2/3/4
+пакет btrfs-progs          btrfs         btrfs
+пакет ntfs-3g              ntfslabel     ntfs
+пакет dosfstools           fatlabel      fat
+пакет mtools               mlabel        fat
+
+sudo e2label /dev/sda3 hdd
+
+lsblk df -h
+
+sudo mkfs.ext4 -L hdd -c /dev/sda3
+-c - проверить устройство на битые сектора перед созданием
+-c или -cc для более долгой но тщательной проверки
+-L - задать метку для раздела с этой файловой системой</note-content>
+</text><last-change-date>2023-07-01T06:46:47,264195Z</last-change-date><last-metadata-change-date>2023-07-01T06:46:47,264195Z</last-metadata-change-date><create-date>2022-05-29T10:08:56,403651Z</create-date><cursor-position>459</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

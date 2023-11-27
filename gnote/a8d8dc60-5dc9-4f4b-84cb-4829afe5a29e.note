@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>OneShot</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">OneShot
+
+oneshot.py -i wlan0 -b 3c:84:6a:97:5d:e2 -K
+oneshot.py -i wlan0 -b 50:ff:20:18:55:e8 -K
+
+cd ~/hack/OneShot
+./oneshot.py -i wlp5s0 -b 46:84:6a:97:5d:e2 -K</note-content>
+</text><last-change-date>2022-12-30T05:54:15,741948Z</last-change-date><last-metadata-change-date>2022-12-30T05:54:15,741948Z</last-metadata-change-date><create-date>2022-12-30T05:54:13,387732Z</create-date><cursor-position>144</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+

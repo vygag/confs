@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>zathura</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">zathura
+
+~/.config/zathura/zathurarc
+https://zenway.ru/page/zathura
+https://pwmt.org/projects/zathura/
+https://habr.com/ru/sandbox/118203/
+https://ru.wikipedia.org/wiki/Zathura_(программа)
+
+    Открыть документ &quot;о&quot;
+    Подогнать размер документа под размер окна &quot;а&quot;
+    Прокрутка вверх &quot;k&quot;
+    Прокрутка вниз &quot;j&quot;
+    Следующая страница &quot;J&quot;
+    Предыдущая страница &quot;K&quot;
+    Перейти на первую/последнюю страницу &quot;gg&quot; / &quot;GG&quot;
+    Приблизить/отдалить/оригинальный размер &quot;zI&quot; / &quot;zO&quot; / &quot;z0&quot;
+    Поиск вперёд по страницам &quot;/&quot;
+    Поиск назад &quot;?&quot;
+    Следующее/предыдущее найденное слово &quot;n&quot; / &quot;N&quot;
+    Показать оглавление &quot;Tab&quot; (если имеется)
+    Переход на страницу с определённым номером &quot;номер страницыG&quot; (например 154G &gt; 154 страница)
+    Изменить цвет фона и текста &quot;Ctrl-i&quot; (белый фон черные буквы и наоборот)
+    Показать/скрыть статусную строку &quot;Ctrl-n&quot;
+    Показать/скрыть строку ввода команд &quot;Ctrl-m&quot;
+    Выход из программы с сохранением закладки &quot;Ctrl-q&quot;
+
+ Режим оглавления (tab)
+Режим презентации (F5) 
+строку можно вызвать/убрать с помощью сtrl-m</note-content>
+</text><last-change-date>2023-01-13T06:09:33,949763Z</last-change-date><last-metadata-change-date>2023-01-13T06:09:33,949763Z</last-metadata-change-date><create-date>2023-01-13T06:00:57,732566Z</create-date><cursor-position>0</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

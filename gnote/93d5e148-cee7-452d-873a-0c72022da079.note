@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Документы chmod</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Документы chmod
+
+sudo chmod 700 -R /home/vyga/Документы/cfg
+sudo chmod 700 -R /home/vyga/Документы/inf
+sudo chmod 700 -R /home/vyga/Документы/runtu
+sudo chmod 700 -R /home/vyga/Документы/cfg/пароли
+sudo chmod 700 -R /home/vyga/Документы/inf/inf
+sudo chmod 700 -R /home/vyga/Документы/Wi-Fi</note-content>
+</text><last-change-date>2021-09-02T06:31:53,000000Z</last-change-date><last-metadata-change-date>2021-09-02T06:31:53,000000Z</last-metadata-change-date><create-date>2021-09-02T06:31:34,000000Z</create-date><cursor-position>289</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

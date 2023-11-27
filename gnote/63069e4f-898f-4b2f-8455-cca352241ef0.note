@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>tr</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">tr
+
+tr -d 0-9 &lt;filename
+# Удалит все цифровые символы из файла &quot;filename&quot;
+bash$ echo &quot;XXXXX&quot; | tr --squeeze-repeats 'X'
+bash$ echo &quot;acfdeb123&quot; | tr -c b-d +
++c+d+b++++
+
+https://losst.pro/komanda-tr-v-linux
+https://unlix.ru/komanda-tr-v-linux-s-primerami/
+https://andreyex.ru/operacionnaya-sistema-linux/komanda-tr-v-linux-s-primerami/
+https://g-soft.info/articles/3204/bash-komanda-tr/
+https://routerus.com/linux-tr-command/
+https://aidalinux.ru/w/Tr
+https://linuxcookbook.ru/articles/komanda-linux-tr
+https://www.vseprolinux.ru/komanda-tr
+https://tokmakov.msk.ru/blog/item/39
+https://noviello.it/ru/kak-ispolzovat-komandu-tr-v-linux/
+https://itisgood.ru/2018/10/22/linux-komanda-tr-dlja-nachinajushhih-s-primerami/
+https://ciksiti.com/ru/chapters/3825-linux-tr-command--linux-hint
+
+tr '~' '&quot;'
+tr -d *
+cat text.txt | tr -d '*' &gt; tex.txt
+cat *.txt | tr '~' '&quot;'
+cat text.txt | tr '…' '...' &gt; tex12.txt</note-content>
+</text><last-change-date>2023-06-20T09:21:59,348713Z</last-change-date><last-metadata-change-date>2023-06-20T09:21:59,348713Z</last-metadata-change-date><create-date>2023-06-19T08:50:01,964604Z</create-date><cursor-position>886</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

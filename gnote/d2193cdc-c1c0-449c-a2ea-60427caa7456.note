@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>git</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">git
+
++ в правом верхнем углу сайта
+New repository
+Repository name* archome - Public - Create Repository
+https://github.com/vygag/archome.git
+
+Settings - Delete this repository
+vygag/blackarch
+
+vygag - Settings
+Developer settings
+Personal access tokens - Tokens (classic)
+Note &quot;githome&quot;
+Expiration 30 days - repo * - Generate token
+
+max 500 МБ
+
+git config --global user.name &quot;vygag&quot;
+git config --global user.email &quot;v0y0g0a@gmail.com&quot;
+git config --global color.ui true
+git config --global color.status auto
+git config --global color.branch auto
+git config --list
+/media/hdd/git/
+git init                             создать репозиторий
+git status
+git add .                            добавить файл или папку
+git commit -m &quot;driver&quot;               сохранить изменения
+git log  [q]                         лог комитов                    
+git branch -a                        управление ветками
+git branch -M main                   Переименуйте ветку master в main
+
+git remote -v                        инфа
+git remote add origin https://github.com/vygag/archome.git
+git push -u origin main              отправить в удаленный репозиторий и связать
+git push                             отправить изменения в удаленный репозиторий
+
+git clone                            клонировать
+git pull                             обновить
+
+https://github.com/vygag/archome.git
+https://github.com/vygag/blackarch.git
+https://github.com/vygag/debian.git
+https://github.com/vygag/confs.git</note-content>
+</text><last-change-date>2023-11-27T07:35:07,236211Z</last-change-date><last-metadata-change-date>2023-11-27T07:35:07,236211Z</last-metadata-change-date><create-date>2023-11-25T07:43:36,685806Z</create-date><cursor-position>1431</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>аудиоплэйер</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">аудиоплэйер
+
+find -type f -print0 | sort -V | cpio -0 -pd &quot;/media/vyga/AUDIO/&quot;
+
+#!/bin/sh
+cd &quot;/путь/откуда/копируем/music/&quot;
+find -type f -print0 | sort -V | cpio -0 -pd &quot;/путь/к флешке/&quot;
+done
+
+Я бы еще заменил в команде sort ключ -z на -V, чтобы номера сортировались по-человечески, а не 1, 10, 11, 2, 3.
+
+#!/bin/sh
+tdir=`pwd`;
+dstdir=&quot;/mnt&quot;;
+#создаём дерево каталогов
+/usr/bin/find ./ -type d | sort | sed -e 's/^.\{2\}//' | awk '{system (&quot;mkdir -p &quot;&quot;\&quot;&quot; &quot;'&quot;$dstdir&quot;'&quot; &quot;/&quot;$0&quot;\&quot;;&quot;)}';
+#копируем файлы
+/usr/bin/find . -name &quot;*.mp3&quot; | sort | awk '{system (&quot;cp &quot; &quot;\&quot;&quot;$0&quot;\&quot;&quot; &quot;'&quot; $dstdir/&quot;'&quot; &quot;\&quot;&quot;$0&quot;\&quot;&quot; &quot;&amp;&amp; echo copy file - &quot; &quot;\&quot;&quot;$0&quot;\&quot;&quot;)}';
+
+find ./ -iname &quot;*.mp3&quot; | sort | while read F ; do cp -v --parents &quot;$F&quot; /media/aleksey/TRANSCEND/ ; done
+
+find . -iname '*.mp3' -print0 | sort -z | xargs -0 -l -I{} cp -v --parents {} /media/aleksey/TRANSCEND/
+
+rsync</note-content>
+</text><last-change-date>2022-07-03T12:39:41,556170Z</last-change-date><last-metadata-change-date>2022-07-03T12:39:41,556170Z</last-metadata-change-date><create-date>2022-05-16T05:59:20,046073Z</create-date><cursor-position>441</cursor-position><selection-bound-position>446</selection-bound-position><width>703</width><height>600</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

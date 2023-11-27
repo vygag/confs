@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>id3v2</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">id3v2
+
+id3v2 -l *.mp3                        Теги список
+id3v2 -D *.mp3                        Удалить все теги
+id3v2 -s *.mp3                        Удалить теги v1
+id3v2 -d *.mp3                        Удалить теги v2
+id3v2 -A *.mp3                        Альбом
+id3v2 -a *.mp3                        Артист
+id3v2 -f *.mp3                        Кадры список
+id3v2 -L *.mp3                        Жанры список
+id3v2 ‐C *.mp3                        Converts id3v1 tag to id3v2
+
+find -iname &quot;*.mp3&quot; -execdir id3v2 -D {} \;
+id3v2 -A &quot;Naslednik oligarha&quot; *.mp3
+
+https://translitonline.com/
+https://pr-cy.ru/translit/
+https://www.itranslit.com/
+https://apsolyamov.ru/files/translit.html
+
+echo Код возврата | iconv -t koi-7 | tr a-zA-Z A-Za-z
+
+---------------------------------------------------------------------
+
+find -iname &quot;*.mp3&quot; -execdir eyeD3 --remove-all {} \;
+eyeD3 --remove-all *.mp3
+eyeD3 --remove-v1 *.mp3
+eyeD3 --remove-v2 *.mp3
+
+          12345678901234
+eyeD3 -A &quot;Станция невозв&quot; -2 *.mp3
+
+
+--------------------------------------------------------------------
+
+--remove-v1 удалить ID3 v1.x tag
+-a artist
+-t title
+-c comment
+
+eyeD3 -a Суворов -A &quot;Контроль&quot; -2 *.mp3
+eyeD3 -a &quot;Суворов&quot; -A &quot;Контроль&quot; -t &quot;Введение&quot; -2 *.mp3
+eyeD3 -a &quot;Ученые против&quot; -A &quot;Петр 1&quot; -2 &quot;Петр 1&quot;.mp3
+
+
+
+
+git clone https://github.com/psemiletov/mtag
+Taglib, C++ 11
+sudo pacman -S taglib
+make
+sudo make install
+
+/media/hdd/аудиокниги/test/Чемпион/rules.txt
+@track=1
+@title=Глава 1
+@artist=Пельмень
+@album=Чемпион
+###
+
+@track=2
+@title=Глава 2
+@artist=Пельмень
+@album=Чемпион
+###
+
+@track=3
+@title=Глава 3
+@artist=Пельмень
+@album=Чемпион
+###
+
+@track=4
+@title=Глава 4
+@artist=Пельмень
+@album=Чемпион
+###
+
+mtag apply rules.txt mp3
+
+git clone https://github.com/nicfit/eyeD3.git
+python3 setup.py install
+
+git clone https://aur.archlinux.org/python-eyed3.git
+</note-content>
+</text><last-change-date>2023-10-18T07:52:51,737418Z</last-change-date><last-metadata-change-date>2023-10-18T07:52:51,737418Z</last-metadata-change-date><create-date>2022-05-18T03:05:05,791350Z</create-date><cursor-position>479</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

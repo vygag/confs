@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>i3wm</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">i3wm
+
+https://runebook.dev/ru/docs/i3/
+Win+Enter            Терминал
+Win+D                  Меню
+Win+1-0                Рабочие столы
+Win+Shift+Q         Закрыть текущее окно
+Win+Shift+R         рестартонуть i3
+Win+Shift+E          выйти из i3
+Win+Shift+A
+Win+Shift+S
+Win+Shift+D
+Win+Shift+F
+Win+Shift+J           Переместить влево
+Win+Shift+K           vniz
+Win+Shift+L           vverh
+Win+Shift+;           pravo
+Win+Shift+space   выйти из i3
+Win+Q                  *
+Win+W                  Размещение с табами
+Win+E                   размещение окон по-умолчанию
+Win+R                   Изменить размеры окон
+Win+T                   geany
+Win+Y                   gnote
+Win+U                   pcmanfm
+Win+I                     browser
+Win+O                  *
+Win+P                   *
+Win+A                    перемещения одного контейнера вверх по дереву
+Win+S                     стековое размещение
+Win+F                     раскрыть окно во весь экран
+Win+G                    *
+Win+H                     Горизонтальное разбиение
+Win+J                      фокус влево
+Win+K                     фокус вниз
+Win+L                     фокус вверх
+Win+Z                     *
+Win+X                     *
+Win+C                     *
+Win+V                     Вертикальное разбиение
+Win+B                     *
+Win+N                     *
+Win+M                     *
+
+Win+Shift+W          *
+Win+Shift+T           *
+Win+Shift+Y           *
+Win+Shift+U           *
+Win+Shift+I            *
+Win+Shift+O           *
+Win+Shift+P           *
+Win+Shift+G           *</note-content>
+</text><last-change-date>2022-06-29T06:39:56,561576Z</last-change-date><last-metadata-change-date>2022-06-29T06:39:56,561576Z</last-metadata-change-date><create-date>2022-06-13T04:47:46,246605Z</create-date><cursor-position>824</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>aur</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">aur
+
+git clone https://aur.archlinux.org/exfalso.git
+cd exfalso
+makepkg -sric
+
+
+pacman -U
+git pull
+
+-s самостоятельно установит недостающие зависимости
+-r после сборки удалит те зависимости, которые будут больше не нужны
+-i установить его в систему
+-c удалит оставшиеся после сборки промежуточные файлы
+ --needed --noconfirm --skippgpcheck
+
+nano /etc/makepkg.conf
+
+curl -o install.sh https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh
+$ sudo sh install.sh
+
+git clone https://aur.archlinux.org/yay.git
+makepkg -si
+
+far2l-git
+
+yay &lt;Search Term&gt;                 Показать меню выбора установки пакета
+yay -Ps                           Печать статистики системы
+yay -Yc                           Очистить ненужные зависимости.
+yay -G &lt;AUR Package&gt;              Загрузить PKGBUILD из ABS или AUR.
+yay -Y --gendb                    Создание базы данных пакетов разработки, 
+yay -Syu                          Обновить все пакеты из AUR и официальных реп
+yay -Pu                           список пакетов, которые необходимо обновить
+yay -Yc                           удалить нежелательные зависимости
+
+qcheckers 0.9.0-2 Qt version of the classic boardgame checkers draughts 2020-01-30
+qt5-base qt5-svg
+https://github.com/portnov/qcheckers
+make
+make install</note-content>
+</text><last-change-date>2023-09-07T05:43:46,861401Z</last-change-date><last-metadata-change-date>2023-09-07T05:43:46,861401Z</last-metadata-change-date><create-date>2022-07-21T04:55:27,944421Z</create-date><cursor-position>5</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

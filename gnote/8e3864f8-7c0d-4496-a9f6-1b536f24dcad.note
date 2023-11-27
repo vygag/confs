@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>ffmpeg</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">ffmpeg
+
+ffmpeg -i СЯЙВО.mp4 Сяйво.mp3
+ffmpeg -i &quot;Коли мине війна&quot;.mp4 &quot;Коли мине війна&quot;.mp3
+
+ffmpeg -i Рушничок.mp4 -ss 00:00:22 -to 00:03:53 -c copy Рушничок_1.mp4
+
+ffmpeg -hwaccel auto -channel_layout stereo -i test.mp4 -ss 00:00:10 -to 00:00:15-c copy -map 0 -avoid_negative_ts 1 -copyts -start_at_zero -y test_1.mp4
+
+ffmpeg -i Bullet_Train.mkv -map 0 -map -0:2 -c copy Bullet_Train1.mkv
+ffmpeg -i Bullet_Train1.mkv -map 0 -map -0:5 -map -0:6 -c copy Bullet_Train2.mkv
+
+mediainfo
+ffmpeg -i parusa.mkv
+ffmpeg -i parusa.mkv -c copy -f segment -segment_time 2100 -reset_timestamps 1 -y parusa_%03d.mkv
+
+ffmpeg -f x11grab -s 1024x600 -i :0.0 -vcodec libx264 zapis.mkv    ctrl+c
+ffmpeg -f x11grab -s 1024x600 -i :0.0 -vcodec qtrle zapis.mov         q
+ffmpeg -i video.mp4 -i audio.m4a -c copy output.mp4
+
+ffmpeg -hwaccel auto -channel_layout stereo -i &quot;Правдивая история истории Родин  Постскриптум.mp3&quot; -c copy -f segment -segment_time 2100 -reset_timestamps 1 -y история_%03d.mp3
+
+ffprobe -select_streams v:0 -skip_frame nokey -show_entries frame=pkt_pts_time -of csv=p=0  &quot;файл_для_анализа&quot;
+
+для  .MKV
+ffmpeg -hwaccel auto -channel_layout stereo -i входной_файл.mkv -ss 00:00:10 -to 00:00:12 -c copy -map 0 -avoid_negative_ts make_zero -y выходной_файл.mkv
+
+для .MP4
+ffmpeg -hwaccel auto -channel_layout stereo -i входной_файл.mp4  -ss 00:00:10 -to 00:00:12 -c copy -map 0 -avoid_negative_ts 1 -copyts -start_at_zero -y выходной_файл.mp4
+
+ffmpeg -i parusa.mkv -s 1280x720 alparusa.mkv</note-content>
+</text><last-change-date>2023-11-04T09:11:19,261731Z</last-change-date><last-metadata-change-date>2023-11-04T09:11:19,261731Z</last-metadata-change-date><create-date>2021-10-14T03:39:23,000000Z</create-date><cursor-position>38</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>scrot</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">scrot
+
+scrot -u /home/vyga/Изображения/seo_fast_ru.png  Print
+scrot /home/vyga/Изображения/screen.png          Shift+Print
+scrot -s
+scrot -d 5 -q 100 -u</note-content>
+</text><last-change-date>2022-08-01T03:18:35,019418Z</last-change-date><last-metadata-change-date>2022-08-01T03:18:35,019418Z</last-metadata-change-date><create-date>2022-07-26T07:07:42,441622Z</create-date><cursor-position>123</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

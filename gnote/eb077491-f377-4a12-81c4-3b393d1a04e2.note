@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>RHVoice</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">RHVoice
+
+-p  &lt;голос&gt;      голосовой профиль
+-r  &lt;процент&gt;    скорость речи
+-q  &lt;качество&gt;   качество
+-v  &lt;процент&gt;    громкость речи
+-t  &lt;процент&gt;    высота тона речи
+-R  &lt;Hz&gt;         частота дискретизации
+
+-i  &lt;путь&gt;       входной файл
+-o  &lt;путь&gt;       выходной файл
+-s  Обрабатывать как ssml
+
+RHVoice-test -p anna -i buf
+RHVoice-test -p anna -r 92 -i buf
+RHVoice-test -p aleksandr-hq -r 115 -i buf
+RHVoice-test -p aleksandr-hq -r 115 -i buf -o testrh.wav
+
+RHVoice-test -p anna -r 90 -i buf -o testrh.wav
+RHVoice-test -p anna -r 90 -i /media/dat/buf.txt -o /media/dat/buf.wav
+mpv testrh.wav
+
+RHVoice-test -p anna -r 90 -i test.txt -o 002.wav
+RHVoice-test -p mikhail -r 90 -i test.txt -o 001.wav
+RHVoice-test -p vitaliy -r 90 -i test.txt -o 001.wav
+
+
+csplit 70460.txt --prefix=Глава '/^Глава/' '{*}'
+split -d -C 45K 70460.txt
+
+
+bash rhv.sh
+./rhv.sh
+#!/bin/bash
+for i in {001..032}
+do 
+RHVoice-test -p anna -r 90 -i $i.txt -o $i.wav
+done
+
+for i in *.wav; do lame -b 128 $i; done
+
+aleksandr-hq
+anna
+arina 	
+artemiy	
+elena	
+evgeniy-rus 	
+irina
+mikhail	
+pavel	 	
+tatiana
+victoria 	
+vitaliy	
+yuriy</note-content>
+</text><last-change-date>2023-09-23T13:12:43,963532Z</last-change-date><last-metadata-change-date>2023-09-23T13:12:43,963532Z</last-metadata-change-date><create-date>2022-11-04T02:31:49,485497Z</create-date><cursor-position>938</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

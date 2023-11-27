@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>iwctl</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">iwctl
+
+iwctl station wlan0 get-networks
+iwctl -P 351207411 station wlan0 connect is74_11
+dhclient wlan0
+iwctl station wlan0 show
+iwctl station wlan0 disconnect
+
+iwctl station wlan0 get-networks
+iwctl -P Yura1972 station wlan0 connect 'ASTRA 2.4G'
+dhclient wlan0
+iwctl station wlan0 show
+iwctl station wlan0 disconnect
+
+iwctl
+[iwd]#
+Tab
+Ctrl+d
+
+[iwd]# station wlan0 get-networks       список обнаруженных сетей
+[iwd]# station wlan0 connect is74_11    подключитесь к сети:
+[iwd]# station wlan0 show               состояние подключения
+[iwd]# station wlan0 disconnect         Отключиться от сети
+
+[iwd]# device list                      список всех Wi-Fi устройств
+[iwd]# station list                     список всех Wi-Fi сетей
+[iwd]# station wlan0 scan               Просканируйте сети
+[iwd]# device wlan0 show                подробности о Wi-Fi устройстве
+
+/var/lib/iwd</note-content>
+</text><last-change-date>2022-12-25T02:40:07,111830Z</last-change-date><last-metadata-change-date>2022-12-25T02:40:07,111830Z</last-metadata-change-date><create-date>2022-12-23T05:09:36,828535Z</create-date><cursor-position>540</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

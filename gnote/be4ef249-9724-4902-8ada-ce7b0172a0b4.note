@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Все wi-fi</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Все wi-fi
+
+airodump-ng --berlin 60000 -w /root/hack/caps/vsewifi wlan0
+
+bash wfw.sh /root/hack/caps/vsewifi-01.csv
+
+airodump-ng -c 7 -d C0:4A:00:C8:7B:00 -w TP-LINK_C87B00 wlan0</note-content>
+</text><last-change-date>2022-12-30T05:55:36,699894Z</last-change-date><last-metadata-change-date>2022-12-30T05:55:36,699894Z</last-metadata-change-date><create-date>2022-12-30T05:55:34,467800Z</create-date><cursor-position>11</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+

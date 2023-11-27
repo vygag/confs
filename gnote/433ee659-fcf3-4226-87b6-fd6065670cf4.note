@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>apt</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">apt
+
+https://losst.pro/kak-polzovatsya-apt?liveurl=1
+https://losst.pro/apt-vs-apt-get-v-chem-raznitsa?liveurl=1
+https://losst.pro/chto-delaet-komanda-aptitude?liveurl=1
+https://zalinux.ru/?p=5291
+https://zalinux.ru/?p=3988
+https://hackware.ru/?p=13848
+https://hackware.ru/?p=8185
+
+/var/lib/apt/lists/*
+/var/lib/dpkg/available
+/var/lib/dpkg/statu
+/var/lib/apt/cache/
+sudo nano /etc/apt/sources.list
+/etc/apt/sources.d/
+
+// Выбор зеркал для загрузки
+deb http://mxrepo.com/mx/repo/ bookworm main non-free
+deb http://mxrepo.com/mx/testrepo/ bookworm test
+
+// Наиболее свежий список зеркал
+http://rsync-mxlinux.org/mirmon/index.html
+
+sudo apt update                          обновить списки пакетов
+apt list --upgradable                    для каких пакетов доступны обновления
+apt list --upgradeable
+sudo apt upgrade                         обновить версию пакета до последней
+sudo apt full-upgrade                    полное обновление системы
+
+sudo apt install package                 установить пакет
+sudo apt download                        Загрузить пакет но не устанавливать
+sudo apt install ./ПАКЕТ.deb             Установить пакет локально
+sudo apt install -f                      Исправление ошибок установки пакетов
+sudo apt check                           находит битые зависимости программ
+apt-cache depends ПАКЕТ                  зависимости пакета
+sudo apt remove                          удалить пакет
+sudo apt purge                           полностью удалить пакет
+sudo apt autoremove                      очистить ненужные пакеты
+
+apt search                               Поиск пакетов
+apt search | grep                        Поиск пакетов
+apt-cache search
+apt show                                 Информация о пакете
+apt list                                 список установленных пакетов
+dpkg -L                                  найти все файлы пакета
+
+sudo apt autoclean                       Очистка кэша неустановленных пакетов
+sudo apt clean                           Полностью очистить каталог кэша
+sudo mc /var/cache/pacman/pkg/</note-content>
+</text><last-change-date>2023-11-26T13:54:48,792333Z</last-change-date><last-metadata-change-date>2023-11-26T13:54:48,792333Z</last-metadata-change-date><create-date>2023-11-22T07:25:13,550621Z</create-date><cursor-position>1476</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>cmd</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">cmd
+
+calcurse -d 01/11/2023
+sensors
+sensors | grep temp3:
+lsblk
+history -c
+history | grep -w yt
+
+timedatectl set-time &quot;гггг-мм-дд чч:мм:сс&quot;
+timedatectl set-time &quot;2023-03-09 15:36:00&quot;
+org.freedesktop.timedate1.set-time
+
+udisksctl mount -b /dev/sda5
+sudo systemctl start NetworkManager
+nmcli device wifi list
+nmcli connection up is74_11
+nmcli connection down is74_11
+nmcli device wifi connect &quot;ASTRA 2.4G&quot; password Yura1972 name &quot;ASTRA 2.4G&quot;
+nmcli connection up &quot;ASTRA 2.4G&quot;
+nmcli connection down &quot;ASTRA 2.4G&quot;
+
+sudo systemctl stop NetworkManager
+sudo systemctl enable NetworkManager.service
+
+xrandr --output VGA1 --brightness 0.5          0.3-0.6
+xrandr --output VGA1 --auto                    Переключал монитор в наилучший режим
+xrandr --output VGA1 --mode 1920x1080          1920x1080
+xbacklight -set 1
+
+xset s off
+xset -dpms
+setxkbmap -layout 'us,ru' -option 'grp:menu_toggle,lv3_ralt_switch'
+setxkbmap -layout 'us,ru' -option 'grp:menu_toggle'             menu
+setxkbmap -layout 'us,ru' -option 'grp:ctrl_shift_toggle'       shift+ctrl
+cat /sys/class/power_supply/BAT1/capacity
+
+iw dev wlp0s29f7u3 scan dump | grep -P 'signal:|rx bitrate:'
+iw dev wlp0s29f7u3 link
+
+iwconfig wlan0 | grep -P 'Rate|level'
+sdcv purge
+gnash &quot;Найди выход из комнаты.swf&quot;
+for i in *.wav; do lame -b 128 $i; done
+ls -1 -R &gt; abook
+find /media/bb28f8fe-e6cb-4dab-ba20-1b13f4ac25ab/ -iname &quot;*keys.man*&quot;
+find -iname &quot;*цыганова*&quot;
+grep -i 'lastwallpaper' /home/vyga/Загрузки/hdisks/*
+grep -r -i &quot;terminus&quot;
+blb2txt.exe -f speznaz.pdf -rs -rh -rl -rp -rc -rpn -ocr -ls -ap -sn -es 1 -in 2
+wget -i gets
+wget -c -i gets
+tar -cvf Mint-X-compact.tar.gz Mint-X-compact
+free -h
+git clone https://github.com/drygdryg/OneShot
+convert blackteam.gif Honesty.jpg
+sudo chown -R vyga:vyga /home/vyga/.fluxbox
+
+https://russianblogs.com/article/6029398458/
+// Удалить пробел и клавишу TAB в начале каждой строки
+sed 's/^[ \t]*//g' style.fl &gt; style.fl2</note-content>
+</text><last-change-date>2023-11-26T14:05:09,894393Z</last-change-date><last-metadata-change-date>2023-11-26T14:05:09,894393Z</last-metadata-change-date><create-date>2021-09-03T06:18:19,000000Z</create-date><cursor-position>1403</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

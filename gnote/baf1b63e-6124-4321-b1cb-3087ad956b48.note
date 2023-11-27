@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Словари</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Словари
+
+https://hackware.ru/?p=2661
+./john --mask='8905143?d?d?d?d' --stdout &gt; beeline.txt
+
+john
+maskprocessor
+pydictor
+crunch
+
+7351309****
+7351307****
+7351304****
+7351302****
+7351305****
+7351306****
+
+73513098845
+
+john --mask='7351309?d?d?d?d' --stdout &gt; tel9.txt
+john --mask='7351307?d?d?d?d' --stdout &gt; tel7.txt
+john --mask='7351304?d?d?d?d' --stdout &gt; tel4.txt
+john --mask='7351302?d?d?d?d' --stdout &gt; tel2.txt
+john --mask='7351305?d?d?d?d' --stdout &gt; tel5.txt
+john --mask='7351306?d?d?d?d' --stdout &gt; tel6.txt</note-content>
+</text><last-change-date>2023-05-29T07:09:26,143979Z</last-change-date><last-metadata-change-date>2023-05-29T07:09:26,143979Z</last-metadata-change-date><create-date>2023-05-28T07:34:08,491406Z</create-date><cursor-position>127</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+

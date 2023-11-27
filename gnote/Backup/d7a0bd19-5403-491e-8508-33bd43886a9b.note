@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>ыа</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">ыа
+
+ffmpeg -i &quot;Что я почувствовала&quot;.mp4 -ss 00:12:07 -to 00:12:19 -c copy Почувствовала_1.mp4
+ffmpeg -i &quot;Как выбрать мужчину&quot;.mp4 &quot;Как выбрать мужчину&quot;.mp3
+ffmpeg -i jungle.mkv -c copy -f segment -segment_time 2540 -reset_timestamps 1 -y jungle%03d.mkv
+ffmpeg -f x11grab -s 1024x600 -i :0.0 -vcodec libx264 zapis.mkv    ctrl+c
+ffmpeg -f x11grab -s 1024x600 -i :0.0 -vcodec qtrle zapis.mov         q</note-content>
+</text><last-change-date>2021-10-14T03:38:56.349598Z</last-change-date><last-metadata-change-date>2021-10-14T03:38:56.349598Z</last-metadata-change-date><create-date>2021-10-14T03:37:48.097650Z</create-date><cursor-position>2</cursor-position><selection-bound-position>-1</selection-bound-position><width>495</width><height>400</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

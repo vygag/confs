@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>amixer</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">amixer
+
+amixer set Master unmute         включить звук
+amixer set Master mute           беззвучный
+
+amixer set Master 35%+
+amixer set Master 0%
+
+amixer set Speaker 35%+
+amixer set Speaker 0%
+Headphone
+PCM
+
+amixer set Speaker 35%+
+amixer set PCM 0%
+alsamixer</note-content>
+</text><last-change-date>2022-10-06T05:45:38,868872Z</last-change-date><last-metadata-change-date>2022-10-06T05:45:38,868872Z</last-metadata-change-date><create-date>2022-09-17T05:53:14,980204Z</create-date><cursor-position>248</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

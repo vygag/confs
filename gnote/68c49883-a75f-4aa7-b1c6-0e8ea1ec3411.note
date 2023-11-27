@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>split</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">split
+
+split -d -n 2 8x.007 8x.007.
+split -d -C 60M 8x.txt 8x.
+split -d -a 3 -C 60M 8x.txt 8x.
+
+split -d -C 80M 8x.dic 8x.
+
+
+-a    длинна
+--additional-suffix – указать дополнительный суффикс
+-d    числа
+
+-b    двоичный размер K M G         45K
+-C    разбить на части не более указанного размера для текстовых файлов
+-n    части КУСКИ
+-l    строки По умолчанию на 1000 строк
+
+split -d -a 3 -C 45K spasti.txt
+split -d -a 3 -n 45 kniga.txt
+split -d -a 3 -l 200 kniga.txt
+
+---------------------------------------------------------------------------
+
+csplit dubai.txt --prefix=Глава '/^Глава/' '{*}'
+csplit test.txt --digits=1 --prefix=Глава '/^Глава/' '{*}'
+
+
+-f, --prefix=PREFIX        используйте ПРЕФИКС вместо 'xx'
+-n, --digits=ЦИФРЫ         используйте указанное количество цифр вместо 2
+-b, --suffix-format=FORMAT используйте ФОРМАТ sprintf вместо %02d
+-s, --quiet, --silent      не печатать подсчеты размеров выходных файлов
+--elide-empty-files        отключить создание файлов с нулевыми байтами
+
+csplit tweets.yaml /----/   разбить файл твита на основе разделителя ----
+https://devsday.ru/blog/details/11729?ysclid=lfw3aogyrv496274275
+
+INTEGER ЦЕЛОЕ
+    copy up to but not including specified line number
+    скопируйте до указанного номера строки, но не включая его
+    
+/REGEXP/[OFFSET]
+/РЕГУЛЯРНОЕ ВЫРАЖЕНИЕ/[СМЕЩЕНИЕ]
+    copy up to but not including a matching line
+    копировать до соответствующей строки, но не включая ее
+    
+%REGEXP%[OFFSET]
+%РЕГУЛЯРНОЕ ВЫРАЖЕНИЕ%[СМЕЩЕНИЕ]
+    skip to, but not including a matching line
+    перейти к, но не включая соответствующую строку
+    
+{INTEGER}
+{ЦЕЛОЕ ЧИСЛО}
+    repeat the previous pattern specified number of times
+    повторите предыдущий шаблон указанное количество раз
+    
+{*}
+    repeat the previous pattern as many times as possible
+    повторите предыдущий шаблон столько раз, сколько возможно
+
+A line OFFSET is an integer optionally preceded by '+' or '-'
+Смещение строки - это целое число, которому необязательно предшествует '+' или '-'</note-content>
+</text><last-change-date>2023-09-19T13:43:29,087314Z</last-change-date><last-metadata-change-date>2023-09-19T13:43:29,087314Z</last-metadata-change-date><create-date>2023-03-31T05:42:03,995539Z</create-date><cursor-position>553</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

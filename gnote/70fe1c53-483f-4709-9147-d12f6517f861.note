@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>mpv</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">mpv
+
+mpv *
+mpv /media/vyga/data/Музон/Grosu/*
+mpv https://www.youtube.com/watch?v=0RlLBE8fXl4
+mpv https://www.youtube.com/watch?v=g20DuU64Tss --no-video
+Shift+o — Переключает состояние OSD
+q exit</note-content>
+</text><last-change-date>2022-07-27T06:06:28,339354Z</last-change-date><last-metadata-change-date>2022-07-27T06:06:28,339354Z</last-metadata-change-date><create-date>2022-07-27T06:00:40,085343Z</create-date><cursor-position>153</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

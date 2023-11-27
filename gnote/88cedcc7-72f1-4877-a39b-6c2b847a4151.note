@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>youtube-dl</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">youtube-dl
+
+yt-dlp -F https://www.youtube.com/watch?v=8bcVL7wqOP0
+yt-dlp --list-subs https://www.youtube.com/watch?v=1QXU4XSqXNo
+yt-dlp https://www.youtube.com/watch?v=QyUoME8tLyM
+youtube-dl --sub-langs ru --sub-format vtt -f 22 https://www.youtube.com/watch?v=1QXU4XSqXNo
+yt-dlp --all-subs https://www.youtube.com/watch?v=q9OIT7W24V8
+yt-dlp -f 18 https://www.youtube.com/watch?v=j0UxsZ1bH5w
+yt-dlp -x https://www.youtube.com/watch?v=QyUoME8tLyM
+yt-dlp -f 18 -a yutb
+yt-dlp -f 22 -a yutb
+yt-dlp -f 140 -a yutb            audio only
+yt-dlp -a inst
+yt-dlp -f 137+140 -a zamok
+youtube-dl -a inst
+yt-dlp -u Vyga1s -p m2f8k6a9h4o5v7g1j3 -a inst
+yt-dlp -R 888 -a inst
+yt-dlp -R 0 -a inst
+--ap-username USERNAME
+--ap-password PASSWORD
+youtube-dl -v -u LOGIN -p PASS
+youtube-dl -x --hls-prefer-native --cookies путь/к/cookies.txt ссылка_на_пост_с_музыкой_вк
+
+yt-dlp -F https://vk.com/video-219291250_456239070
+yt-dlp https://vk.com/video-219291250_456239070
+yt-dlp -f hls-4638 https://vk.com/video-219291250_456239070
+
+yt-dlp -u +79080403118 -p a3k7d4p8m5h2w6e1t9z -F https://vk.com/video-219291250_456239070
+yt-dlp -u +79080403118 -p a3k7d4p8m5h2w6e1t9z https://vk.com/video-219291250_456239070
+yt-dlp -u +79080403118 -p a3k7d4p8m5h2w6e1t9z -a dorama
+yt-dlp -u +79080403118 -p a3k7d4p8m5h2w6e1t9z -f hls-2224 -a dorama
+
+hls-4638 1920x800
+
+https://doramatv.live/nasledie_iun_siana</note-content>
+</text><last-change-date>2023-11-13T07:01:52,020960Z</last-change-date><last-metadata-change-date>2023-11-13T07:01:52,020960Z</last-metadata-change-date><create-date>2021-09-02T04:24:51,000000Z</create-date><cursor-position>547</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

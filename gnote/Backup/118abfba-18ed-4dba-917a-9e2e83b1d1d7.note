@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>dpkg</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">dpkg
+
+sudo dpkg -i имя_пакета.deb
+dpkg -r имя_пакета.deb
+dpkg -P имя_пакета.deb
+dpkg --configure -a
+dpkg -l &gt; vsepakety</note-content>
+</text><last-change-date>2021-09-04T04:37:12,000000Z</last-change-date><last-metadata-change-date>2021-09-04T04:37:12,000000Z</last-metadata-change-date><create-date>2021-09-04T04:31:52,000000Z</create-date><cursor-position>100</cursor-position><selection-bound-position>119</selection-bound-position><width>692</width><height>573</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

@@ -1,0 +1,95 @@
+Настройки Firefox.
+
+about:config
+
+network.proxy.socks_remote_dns                               true
+network.prefetch-next                                        false
+geo.enabled                                                  false
+browser.send_pings                                           false
+
+Дополнения Firefox.
+
+Обход блокировок Рунета
+Доступ к Рутрекеру
+GoFullPage - Full Page Screen Capture
+uMatrix
+ru.savefrom.net
+
+UnMHT
+http://www.unmht.org/unmht/en_index.html
+
+uBlock Origin
+https://addons.mozilla.org/ru/firefox/addon/ublock-origin/?src=api
+
+friGate Открывает заблокировнные сайты fri-gate.org
+https://fri-gate.org/
+
+Доступ к Рутрекеру
+http://www.dostup-rutracker.org/
+
+Download YouTube Videos as MP4
+
+Flash Video Downloader YouTube HD Download
+https://addons.mozilla.org/ru/firefox/addon/flash-video-downloader/
+
+RequestPolicy
+https://www.requestpolicy.com/releases/requestpolicy-CURRENT.xpi
+
+Adblock Plus
+
+SaveFrom.net
+-----------------------------------------------------
+Установка Firefox ESR
+
+сохранить 
+/usr/share/applications/firefox.desktop
+
+sudo aptitude purge firefox
+sudo aptitude purge firefox-locale-ru
+sudo apt-get autoremove --purge
+
+удалить
+sudo mc /usr/lib/
+/usr/lib/firefox/
+/home/vyga/.mozilla/firefox/
+-------------------------------------------------
+
+-------------------------------------------------
+http://mozilla-russia.org/products/firefox/history.html
+сохранить файл firefox-52.7.3esr.tar.bz2 в /home/vyga/prog/
+извлечь сюда
+ln -s /home/vyga/prog/firefox/firefox /home/vyga/"Рабочий стол"
+ln -s /home/vyga/prog/firefox/firefox /home/vyga/Рабочий\ стол
+
+sudo mkdir -p /usr/lib/mozilla/plugins/usr
+sudo tar xvzf flash_player_npapi_linux.i386.tar.gz -C /usr/lib/mozilla/plugins
+sudo rm -r /usr/lib/mozilla/plugins/usr
+
+--------------------------------------------------------------------------------------
+https://helpx.adobe.com/ru/flash-player.html
+http://get.adobe.com/ru/flashplayer/
+
+sudo tar xvzf flash_player_npapi_linux.i386.tar.gz -C /usr/lib/mozilla/plugins
+sudo rm -r /usr/lib/mozilla/plugins/usr
+--------------------------------------------------------------------------------------
+
+Серфинг буксов в firefox
+
+abоut:config
+
+network.http.pipelining true
+network.http.proxy.pipelining true
+network.http.pipelining.maxrequests 32
+нажимаем правую кнопку мыши создать-целое
+создаем новый параметр: nglayout.initialpaint.delay целое значение 0
+network.dns.disableIPv6 false
+content.notify.backoffcount 5
+ui.submenuDelay 0
+создать plugin.expose_full_path логическое true
+browser.sessionhistory.max_total_viewers 0
+создать config.trim_on_minimize логическое true
+browser.cache.memory.enable false
+
++ ShockwaveFlash
+инструменты>настройки>дополнительные>общие и убираем все галочки
+вкладку «сеть» галочку «Отключить автоматическое управление кешем

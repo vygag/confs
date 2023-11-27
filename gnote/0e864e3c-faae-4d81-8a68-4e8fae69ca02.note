@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Thunar</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Thunar
+
+Правка + Особые действия
+Основное
+Имя        Контрольная сумма...
+Описание   Расчёт контрольных сумм выбранного файла
+Команда    gtkhash %f
+Без значка
+
+Условие появления
+Шаблон имени файла                                    *
+Появляется если выделение содержит      Все исключая каталоги
+
+exo-open --working-directory %f --launch TerminalEmulator
+
+sha256sum %f | zenity --text-info --width=700
+md5sum %f | zenity --text-info --width=300
+mediainfo %f | zenity --text-info
+file %f | zenity --text-info
+7z x %f
+7z x %f | zenity --text-info
+lxterminal -e sha256sum %f</note-content>
+</text><last-change-date>2022-10-08T07:21:45,936356Z</last-change-date><last-metadata-change-date>2022-10-08T07:21:45,936356Z</last-metadata-change-date><create-date>2021-09-02T06:27:47,000000Z</create-date><cursor-position>507</cursor-position><selection-bound-position>-1</selection-bound-position><width>703</width><height>600</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

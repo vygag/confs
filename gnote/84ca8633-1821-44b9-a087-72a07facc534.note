@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Журналы</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Журналы
+
+sudo dmesg
+sudo dmesg -l err
+sudo dmesg -l err,warn
+journalctl -r
+journalctl -r -ex</note-content>
+</text><last-change-date>2022-05-17T02:38:34,951289Z</last-change-date><last-metadata-change-date>2022-05-17T02:38:34,951289Z</last-metadata-change-date><create-date>2022-05-17T02:38:06,948243Z</create-date><cursor-position>75</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

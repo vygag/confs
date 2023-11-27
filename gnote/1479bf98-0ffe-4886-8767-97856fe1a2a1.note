@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>sh</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">sh
+
+#!/bin/sh в начале файла *.sh
+./rhv.sh
+bash rhv.sh
+bash ./rhv.sh
+
+sudo chmod 710 rhv.sh
+sudo chmod 710 start-tor-browser.desktop</note-content>
+</text><last-change-date>2023-10-27T08:36:04,528803Z</last-change-date><last-metadata-change-date>2023-10-27T08:36:04,528803Z</last-metadata-change-date><create-date>2022-08-14T07:46:50,098878Z</create-date><cursor-position>70</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

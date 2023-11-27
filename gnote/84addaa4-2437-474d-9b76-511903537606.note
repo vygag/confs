@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>tshark</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">tshark
+
+tshark -r /root/hack/caps/crk/Intersvyaz_0B78.cap -Y eapol
+tshark -r /root/hack/caps/crk/Intersvyaz_0B78.cap -Y eapol -T tabs
+tshark -r /root/hack/caps/crk/Intersvyaz_0B78.cap -Y eapol -V
+tshark -r Intersvyaz_0B78-01.cap -R 
+Telekom-01.cap
+
+tshark -r Tatyana-01.cap -Y eapol
+tshark -r SPIDER.pcapng -Y eapol
+tshark -r Tatyana-01.cap -Y eapol
+
+
+
+tshark -r packets.pcap
+tshark -r packets.pcap -V
+tshark -r packets.pcap -T text
+tshark -r packets.pcap -T tabs
+tshark -i eth0 -c 5 -f &quot;tcp port 80&quot; -Y 'http.request.method == &quot;GET&quot; '
+tshark -r wlan.pcap -z endpoints,wlan -q | head
+tshark -r color.pcap --color
+tshark -R &quot;правило&quot; -r &quot;путь к файлу&quot;
+tshark -R &quot;ip.addr == 192.168.0.1&quot; -r /tmp/capture.cap</note-content>
+</text><last-change-date>2023-01-05T02:12:18,949693Z</last-change-date><last-metadata-change-date>2023-01-05T02:12:18,949693Z</last-metadata-change-date><create-date>2022-12-30T05:54:55,772645Z</create-date><cursor-position>6</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+

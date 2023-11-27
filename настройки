@@ -1,0 +1,393 @@
+dpi 96
+
+---------------------------------------------------------
+# значки и штатное меню рабочего стола пропадают
+pcmanfm --desktop
+---------------------------------------------------------
+
+# удалить обои рабочего стола
+
+sudo rm /usr/share/backgrounds/*
+
+---------------------------------------------------------
+
+# Установка новых курсоров в xfce
+
+sudo mc /usr/share/icons
+/home/vyga/Загрузки/soft/aerodrop/
+
+sudo mcedit /etc/alternatives/x-cursor-theme
+Name=aerodrop
+
+sudo mcedit /usr/share/icons/default/index.theme
+
+[Icon Theme]
+Inherits=aerodrop
+
+-----------------------------------------------------------------
+
+# по поводу реакции на закрывание-открывание крышки.
+
+sudo nano /etc/systemd/logind.conf
+IdleAction=ignore                  действие при бездействии системы
+
+HandlePowerKey=poweroff            действие после нажатия клавиши питания
+HandlePowerKeyLongPress=ignore
+HandleRebootKey=ignore
+HandleRebootKeyLongPress=ignore
+HandleSuspendKey=ignore
+HandleSuspendKeyLongPress=ignore
+HandleHibernateKey=ignore
+HandleHibernateKeyLongPress=ignore
+HandleLidSwitch=ignore              действие после закрытия крышки
+HandleLidSwitchExternalPower=ignore
+HandleLidSwitchDocked=ignore
+
+ignore poweroff suspend
+
+-----------------------------------------------------------------
+
+# Индикатор заряда батареи
+upower --monitor-detail
+
+# Вывести все параметры для всех объектов
+upower -d
+
+----------------------------------------------------------------------
+
+# Регулировать яркость монитора
+sudo setpci -s 00:02.0 F4.B=85
+
+--------------------------------------------------------------------
+
+# Сменить владельца каталога файла
+
+sudo chown -R vyga:vyga /media/3Q/видео/наука/выживание/Один\ на\ один\ с\ природой
+sudo chown -R vyga:vyga /media/3Q/видео/наука/выживание/"Один на один с природой"
+
+-------------------------------------------------------------------------
+
+# Меню программ - Параметры - Автозагрузка программ.
+
+Отключить затемнение монитора
+xset s off; xset -dpms
+
+Переключение раскладки Ctrl+Shift
+setxkbmap -layout 'us,ru' -option 'grp:ctrl_shift_toggle,lv3_ralt_switch'
+
+/home/vyga/.config/autostart/
+
+------------------------------------------------------------------------------
+
+# Настройка клавиатуры.
+
+1. Правой клавишей мышки щелкаем на флаге языка (значёк на панели задач)
+2. Свойства - Переключение раскладки Ctrl+Shift.
+
+# изменить сочетание клавиш, Ctrl+Shift для смены раскладки клавиатуры.
+sudo dpkg-reconfigure keyboard-configuration
+
+setxkbmap -layout 'us,ru' -option 'grp:ctrl_shift_toggle,lv3_ralt_switch'
+setxkbmap -layout 'us,ru' -option 'grp:menu_toggle,lv3_ralt_switch'
+------------------------------------------------------------------------------
+
+# Настройки Geany Редактор - Отображение - маркер длинной строки - Включено
+Редактор - Возможности - Сворачивание блока кода
+
+----------------------------------------------------------------------------
+
+У меня на одном компьютере установлено несколько операционных систем. 
+Но после установки Ubuntu я обнаружил,
+что время в Ubuntu  и других системах различается!
+# поменяйте строку UTC=yes на UTC=no
+
+timedatectl set-local-rtc 1
+
+sudo hwclock --localtime --adjust
+
+-------------------------------------------------------------------------
+
+# возможно ли верхнюю и нижнюю панели поменять местами.
+
+Выбираете панель какую хотите переместить. Снимаете галку "закрепить панель", и 
+за левую боковую часть перемещаете панель вниз.
+
+-----------------------------------------------------------------------
+
+# настройка часового пояса timezone
+
+sudo dpkg-reconfigure tzdata
+
+------------------------------------------------------
+
+# настройка даты и часов
+
+# установить время
+sudo date -s 08:21
+
+# Устанавливаем дату: февраль02 21вторник время20:50 2017года
+sudo date 022120502017
+
+------------------------------------------------------------------
+
+# Просмотреть все диски в системе.
+
+sudo fdisk -l
+
+------------------------------------------------------------------
+
+# Присвоить метку тома флешке
+blkid
+df -h
+sudo fatlabel /dev/sdb1 arhiv
+sudo mlabel /dev/sdb1 arhiv
+
+-------------------------------------------------------
+
+# Как отключить монитор в Ubuntu.
+
+xset dpms force off
+xset dpms force on
+
+--------------------------------------------------------------------------------
+
+# отключить затемнение монитора.
+
+# опция q дает информацию о текущих установках
+xset -q
+
+# отключить хранитель экрана.
+xset s off
+
+# отключить режим dpms (Display Power Management Signaling).
+xset -dpms
+
+-----------------------------------------------------------------------------
+
+# Принудительное размонтирование usb.
+
+# показать номер блокирующего процесса.
+fuser -m /media/3Q
+# посмотреть процесс.
+ps 5430
+ps -A
+ps aux
+# убиваем процесс.
+kill 5430
+fuser -k -m /media/3Q
+sudo umount -f /media/3Q
+# а вот теперь размонтируем.
+sudo umount /media/3Q
+
+-------------------------------------------------------------------------
+
+# Как остановить устройство.
+1. # Вывести список usb устройств.
+df -h
+2. # Извлечь том.
+3. # Отключить usb винт.
+udisksctl power-off -b /dev/sdc
+
+-------------------------------------------------------------------
+
+GRUB_DISABLE_OS_PROBER=true отключить
+GRUB_DISABLE_OS_PROBER=false  включить
+Проблема частично решилась. Примонтировал раздел с дос. Os-prober нашёл MS_DOS, grub-mkconfig добавил в меню загрузки. 
+Нам нужно скачать пакеты mkinitcpio,linux и linux-firmware. Затем выполнить скрипт mkinitcpio -p linux. 
+Будет создан загрузочный образ ядра. И само ядро появится в /boot. после этого уже можно делать grub-mkconfig. 
+Все системы определились! Всё работает! 
+
+# Как убрать загрузочную заставку.
+
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX_DEFAULT=""
+убери quiet splash из пунктов загрузки, скобки оставить сохранить.
+quiet удалять необязательно. Это только добавит вывод сообщений ядра
+
+GRUB_TERMINAL=console
+
+sudo nano /etc/default/grub
+sudo update-grub
+
+sudo apt purge grub2-theme-mint
+
+-------------------------------------------------------------------------
+
+# иконки
+
+/usr/share/icons/ubuntu-mono-dark/preferences-system-directory.svg
+/usr/share/icons/ubuntu-mono-dark/categories/24/
+preferences-system-directory.svg
+
+/usr/lib/firefox/browser/icons/mozicon128.png
+
+---------------------------------------------------------------------
+
+# переключения разрешения монитора
+
+ Ctrl+Alt+"-", Ctrl+Alt+"+"
+ 
+----------------------------------------------------------------------
+
+# Проверка дисков на бэдблоки
+
+sudo fdisk -l
+sudo badblocks -s -v /dev/sdb > /home/vyga/badblock
+
+# Пометка бэд блоков помеченные блоки будут игнорироваться
+
+e2fsck -l /home/vyga/badblock /dev/sdb
+
+---------------------------------------------------------------------
+
+# Озерские хабы DC++.
+
+инструменты - настройки - персональные
+ник runtu
+кодировка хаба по умол CP1251 (Кириллица)
+
+шара - продвинутые -  количество слотов отдачи 5
+
+hub.ozersk.net
+172.16.100.25
+ozersk-patrol.ru  OzerskPatrol DC Hub  Хаб Алексея
+
+dchub://ozersk-patrol.ru:411
+dchub://ozersk-patrol.net:411
+
+-------------------------------------------------------------------------
+/var/log/
+
+/var/log/boot.log — Содержит информацию, которая регистрируется при загрузке системы.
+/var/log/dmesg — содержит сообщения, полученные от ядра.
+
+Выводим только ошибки из /var/log/dmesg
+
+grep -i error /var/log/dmesg
+grep -i error /var/log/boot.log
+
+cat /var/log/boot.log | grep failed
+cat /var/log/boot.log | grep error
+cat /var/log/dmesg | grep failed
+cat /var/log/dmesg | grep error
+
+------------------------------------------------------------------------
+
+# Настройка количества рабочих столов
+
+sudo mcedit /home/vyga/.config/openbox/rc.xml
+
+F7 <desktops> параметр <number> 1
+
+---------------------------------------------------------------------
+
+# Очистка
+# удалите лишние локали из системы
+locale
+locale -a
+sudo apt install localepurge
+sudo dpkg-reconfigure localepurge
+
+/etc/locale.nopurge
+ru
+ru_RU
+ru_RU.UTF-8
+
+localepurge
+
+# Устаревшие файлы конфигурации
+
+sudo apt clean
+sudo apt autoclean
+sudo apt autoremove
+journalctl --disk-usage
+sudo journalctl --vacuum-time=1d
+
+sudo aptitude clean
+sudo aptitude autoclean
+sudo aptitude purge ~c
+sudo apt-get autoremove --purge
+dpkg -l | awk '/^rc/ {print $2}' | xargs sudo dpkg --purge
+
+/home/vyga/.wine/drive_c/users/vyga/Temp
+/home/vyga/.wine/drive_c/users/vyga/Local Settings/Temporary Internet Files/Content.IE5
+/home/vyga/.mozilla
+/home/vyga/.cache/wine
+
+/var/log
+/home/vyga/.cache
+logrotate
+--------------------------------------------------------------
+
+Shift и F2
+screenshot --fullpage
+screenshot --fullpage /home/vyga/123.png
+
+chrome://flags
+
+[play.google.com]
+
+apps.evozi.com/apk-downloader/
+
+---------------------------------------------------------------------
+# Перезапуск Сети
+systemctl list-units | grep -i network
+sudo systemctl restart NetworkManager
+sudo systemctl restart networking.service
+sudo systemctl restart NetworkManager
+sudo nmcli networking off
+sudo nmcli networking on
+sudo ifdown -a
+sudo ifup -a
+
+# Заметки Gnote
+
+/home/vyga/.local/share/gnote
+
+экранная клавиатура Onboard не переключает раскладку
+https://zenway.ru/page/onboard
+настройках клавиатуры, оборудование, модель клавиатуры изменил на неизвестный производитель DTK2000
+Необходимо выбрать клавиатуру "обычная 104-клавишная" (не международная!
+----------------------------------------------------------------------------
+Восстановление Grub2
+
+https://omgubuntu.ru/nie-zaghruzhaietsia-linux-chinim-zaghruzchik-grub/
+https://help.ubuntu.ru/wiki/восстановление_grub
+https://www.altlinux.org/Переустановка_GRUB
+https://ocomp.info/vosstanovit-zagruzchik-grub.html
+https://pingvinus.ru/note/grub-restore
+https://laurvas.ru/chroot/
+https://wiki.debian.org/chroot
+https://www.debian.org/releases/stretch/mips/apds03.html.ru
+https://lx4u.ru/mkdocs/build-temp-system/enter-in-chroot/
+
+
+sudo mount /dev/sda1 /mnt
+sudo mount --bind /dev /mnt/dev
+sudo mount --bind /proc /mnt/proc
+sudo mount --bind /sys  /mnt/sys
+
+sudo chroot /mnt
+sudo update-grub
+grub-install /dev/sda
+
+sudo umount /mnt/dev
+sudo umount /mnt/proc
+sudo umount /mnt/sys
+sudo umount /mnt
+
+//настройка политики монтирования
+sudo nano /usr/share/polkit-1/actions/org.freedesktop.UDisks2.policy
+<action id="org.freedesktop.udisks2.filesystem-mount-system">
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+
+<action id="org.freedesktop.udisks2.filesystem-mount">
+    <defaults>
+      <allow_any>yes</allow_any>
+      <allow_inactive>yes</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>

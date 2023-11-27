@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>nano</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">nano
+
+<monospace>Alt+X            Режим справки разрешить/запретить
+Alt+M            Поддержка мыши разрешить/запретить
+Alt+Y            Подсветка синтаксиса разрешить/запретить
+Alt+F            Открыть новый файл Ctrl+R  Ins
+Ctrl+T           Файловый браузер
+Alt+&gt;            Следующий файл
+Alt+&lt;            Предыдущий файл
+Alt+D            Подсчитать количество слов, строк и символов
+Ctrl+C  F11      Показать положение курсора
+
+Alt+G            Перейти на указанный номер строки и ряд
+Ctrl+W  F6       Поиск
+Alt+R            Поиск и замена
+Ctrl+K  F9       Вырезать текущую строку и сохранить её в буфере обмена
+Shift+Insert     Вставить
+Ctrl+U  F10      Вставить содержимое буфера обмена в текущую строку
+Ctrl+R  Ins      Вставить содержимое другого файла на позицию курсора
+Ctrl+Q           Search backward for a string or a regular expression
+Alt+W            Повторить последний поиск
+Alt+q            Search next occurrence backward
+Alt+w            Search next occurrence forward
+Alt+U            Отменить последнее действие
+Alt+E            Повторить последнее отменённое действие
+
+Ctrl+G  F1       Помощь
+Ctrl+X  F2       Выйти из nano
+Ctrl+O  F3       Записать текущий файл на диск
+Ctrl+S           Сохранить файл без запроса
+Ctrl+R  F5       Вставить другой файл в текущий</monospace></note-content>
+</text><last-change-date>2022-06-10T06:28:16,808132Z</last-change-date><last-metadata-change-date>2022-06-10T06:28:16,808132Z</last-metadata-change-date><create-date>2021-09-03T04:23:33,000000Z</create-date><cursor-position>724</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:Команды</tag></tags></note>
+

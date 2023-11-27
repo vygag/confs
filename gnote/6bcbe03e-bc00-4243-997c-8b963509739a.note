@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Дрова</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Дрова
+
+// Arch
+lspci
+lsusb
+lshw
+
+kmod                               пакет с утилитами дров
+lsmod                              какие модули ядра загружены в настоящий момент
+modinfo 8192eu                     показать информацию о модуле
+rmmod                              удалить модуль ядра
+modprobe                           загрузки модулей ядра.
+insmod                             Загрузка модуля из другого места
+modprobe [модуль]                  загрузить модуль ядра
+modprobe 8192eu
+modprobe -r [модуль]               удалить модуль ядра
+/etc/modprobe.d/blacklist.conf  rtl8xxxu
+
+Во-первых, следует загрузить и распаковать архив исходного кода драйвера устройства в директорию /usr/src/&lt;название-драйвера&gt;-&lt;версия&gt;.
+
+sudo dkms autoinstall
+sudo dkms install rtl88x2bu/5.6.1
+sudo dkms remove -m rtl88x2bu -v 5.6.1 --all
+dkms status
+git clone &quot;https://github.com/RinCat/RTL88x2BU-Linux-Driver.git&quot; /usr/src/rtl88x2bu-git
+sudo sed -i 's/PACKAGE_VERSION=&quot;@PKGVER@&quot;/PACKAGE_VERSION=&quot;git&quot;/g' /usr/src/rtl88x2bu-git/dkms.conf
+sudo dkms add -m rtl88x2bu -v git
+sudo dkms autoinstall
+
+// Debian
+//видеокарта AMD/ATI свободные драйвера
+xserver-xorg-video-ati
+firmware-amd-graphics
+libgl1-mesa-dri
+libglx-mesa0
+
+//прошивки
+firmware-iwlwifi
+firmware-realtek
+
+firmware-linux ?
+firmware-linux-nonfree ?
+
+sudo apt install isenkram-cli
+sudo isenkram-autoinstall-firmware
+
+https://wiki.debian.org/ru/AtiHowTo          AMD/ATI свободные драйвера
+https://www.opennet.ru/tips/2577_ati_linux_driver_xorg_kernel.shtml
+https://help.ubuntu.ru/wiki/руководство_по_ubuntu_desktop_14_04/установка_драйверов_amd
+
+
+/var/log/Xorg.0.log
+
+-----------------------------------------------------------------------
+// Wi-Fi USB Adapter Wireless N300 D-Link DWA-137 Realtek RTL8192EU
+git clone https://github.com/clnhub/rtl8192eu-linux
+make
+sudo insmod ./8192eu.ko
+lsmod | grep 8192eu
+ip link
+iw dev
+
+sudo make install
+install -p -m 644 8192eu.ko  /lib/modules/6.3.1-arch1-1/kernel/drivers/net/wireless/
+/sbin/depmod -a 6.3.1-arch1-1
+
+make
+sudo make install
+./install_wifi.sh</note-content>
+</text><last-change-date>2023-05-05T13:33:18,122938Z</last-change-date><last-metadata-change-date>2023-05-05T13:33:18,122938Z</last-metadata-change-date><create-date>2022-05-16T03:43:05,949834Z</create-date><cursor-position>356</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

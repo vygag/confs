@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Обнова</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Обнова
+
+wine
+wget http://www.cross-plus-a.com/balabolka_portable.zip         2.15.0.835
+wget http://www.cross-plus-a.com/blb2txt.zip                         1.108
+wget http://aloys.narod.ru/Demagog.zip                            7.30.417
+www.aimp.ru/?do=download&amp;os=windows                              5.10.2414
+https://sourceforge.net/p/doublecmd/wiki/Download/                  1.0.10
+www.farmanager.com/download.php?l=ru            v3.0 build 6060 2022-12-08
+
+linux
+https://dist.torproject.org/torbrowser/13.0.1/tor-browser-linux64-13.0.1_ALL.tar.xz
+https://dist.torproject.org/torbrowser/13.0.1/tor-browser-linux-x86_64-13.0.1.tar.xz
+desktop.telegram.org                                          tsetup.4.6.0
+7-zip.org/download.html                                   7z2201-linux-x64
+wget https://7-zip.org/a/7z2301-linux-x64.tar.xz
+eyed3.readthedocs.io                                                v0.9.7
+https://sourceforge.net/projects/man-pages-ru/
+git clone https://github.com/clnhub/rtl8192eu-linux            3 недели
+
+www.palemoon.org/download.shtml                                32.5.0
+https://addons.palemoon.org/language-packs/
+https://github.com/gorhill/uBlock/releases/download/1.14.10/uBlock0.fire
+https://github.com/anticensority/runet-censorship-bypass/releases/download/0.0.1.53-rc0/runet-censorship-bypass-0.0.1.56-full-rc0.zip
+
+hack
+git clone https://github.com/drygdryg/OneShot                  5 months ago
+git clone https://github.com/v1s1t0r1sh3r3/airgeddon           3 months ago
+http://stascorp.com/load/
+
+
+
+https://serfock.ru/browser/cat-palemoon/setup-rus-palemoon
+https://softobase.com/ru/article/instrukciya-po-rusifikacii-brauzera-pale-moon</note-content>
+</text><last-change-date>2023-11-26T08:33:55,242861Z</last-change-date><last-metadata-change-date>2023-11-26T08:33:55,242861Z</last-metadata-change-date><create-date>2022-12-07T01:45:29,054346Z</create-date><cursor-position>1025</cursor-position><selection-bound-position>1031</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Заметки</tag></tags></note>
+

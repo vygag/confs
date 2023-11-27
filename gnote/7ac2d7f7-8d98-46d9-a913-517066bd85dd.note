@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>Очистка</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">Очистка
+
+sudo apt clean
+sudo apt autoclean
+sudo apt autoremove
+sudo aptitude purge ~c
+sudo apt-get autoremove --purge
+journalctl --disk-usage
+sudo journalctl --vacuum-time=1d
+dpkg -l | grep '^rc' | awk '{print $2}'
+dpkg -l | grep '^rc' | awk '{print $2}' | xargs sudo apt --purge --yes remove
+dpkg -l | awk '/^rc/ {print $2}' | xargs sudo dpkg --purge</note-content>
+</text><last-change-date>2022-02-13T02:52:50,000000Z</last-change-date><last-metadata-change-date>2022-02-13T02:52:50,000000Z</last-metadata-change-date><create-date>2021-09-03T06:21:15,000000Z</create-date><cursor-position>43</cursor-position><selection-bound-position>62</selection-bound-position><width>692</width><height>573</height><tags><tag>system:notebook:Настройки</tag></tags></note>
+

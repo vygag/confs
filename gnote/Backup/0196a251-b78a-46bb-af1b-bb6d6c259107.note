@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>eyeD3</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">eyeD3
+
+eyeD3 --remove-all *.mp3
+eyeD3 --remove-v2 *.mp3
+find -iname &quot;*.mp3&quot; -execdir eyeD3 --remove-all {} \;
+
+</note-content>
+</text><last-change-date>2021-09-04T04:30:08.456815Z</last-change-date><last-metadata-change-date>2021-09-04T04:30:08.456815Z</last-metadata-change-date><create-date>2021-09-04T04:29:12.334480Z</create-date><cursor-position>85</cursor-position><selection-bound-position>90</selection-bound-position><width>495</width><height>400</height><tags><tag>system:notebook:Команды</tag></tags></note>
+
