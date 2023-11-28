@@ -27,7 +27,7 @@ git config --list
 git init                             создать репозиторий
 git status
 git add .                            добавить файл или папку
-git commit -m &quot;driver&quot;               сохранить изменения
+git commit -m &quot;debian downlod&quot;      сохранить изменения
 git log  [q]                         лог комитов                    
 git branch -a                        управление ветками
 git branch -M main                   Переименуйте ветку master в main
@@ -44,5 +44,5 @@ https://github.com/vygag/archome.git
 https://github.com/vygag/blackarch.git
 https://github.com/vygag/debian.git
 https://github.com/vygag/confs.git</note-content>
-</text><last-change-date>2023-11-27T07:35:07,236211Z</last-change-date><last-metadata-change-date>2023-11-27T07:35:07,236211Z</last-metadata-change-date><create-date>2023-11-25T07:43:36,685806Z</create-date><cursor-position>1431</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+</text><last-change-date>2023-11-27T07:51:04,423968Z</last-change-date><last-metadata-change-date>2023-11-27T07:51:04,423968Z</last-metadata-change-date><create-date>2023-11-25T07:43:36,685806Z</create-date><cursor-position>381</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
 
