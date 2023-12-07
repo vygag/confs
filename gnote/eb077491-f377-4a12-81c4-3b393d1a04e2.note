@@ -26,8 +26,8 @@ RHVoice-test -p mikhail -r 90 -i test.txt -o 001.wav
 RHVoice-test -p vitaliy -r 90 -i test.txt -o 001.wav
 
 
-csplit 70460.txt --prefix=Глава '/^Глава/' '{*}'
-split -d -C 45K 70460.txt
+csplit Тайнаякапитуляция.txt --prefix=Глава '/^Глава/' '{*}'
+split -d -C 45K Тайнаякапитуляция.txt
 
 
 bash rhv.sh
@@ -53,5 +53,5 @@ tatiana
 victoria 	
 vitaliy	
 yuriy</note-content>
-</text><last-change-date>2023-09-23T13:12:43,963532Z</last-change-date><last-metadata-change-date>2023-09-23T13:12:43,963532Z</last-metadata-change-date><create-date>2022-11-04T02:31:49,485497Z</create-date><cursor-position>938</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+</text><last-change-date>2023-11-28T13:57:09,918801Z</last-change-date><last-metadata-change-date>2023-11-28T13:57:09,918801Z</last-metadata-change-date><create-date>2022-11-04T02:31:49,485497Z</create-date><cursor-position>962</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
 

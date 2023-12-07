@@ -27,7 +27,7 @@ git config --list
 git init                             создать репозиторий
 git status
 git add .                            добавить файл или папку
-git commit -m &quot;debian downlod&quot;      сохранить изменения
+git commit -m &quot;gnote blb2txt&quot;      сохранить изменения
 git log  [q]                         лог комитов                    
 git branch -a                        управление ветками
 git branch -M main                   Переименуйте ветку master в main
@@ -43,6 +43,10 @@ git pull                             обновить
 https://github.com/vygag/archome.git
 https://github.com/vygag/blackarch.git
 https://github.com/vygag/debian.git
-https://github.com/vygag/confs.git</note-content>
-</text><last-change-date>2023-11-27T07:51:04,423968Z</last-change-date><last-metadata-change-date>2023-11-27T07:51:04,423968Z</last-metadata-change-date><create-date>2023-11-25T07:43:36,685806Z</create-date><cursor-position>381</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+https://github.com/vygag/confs.git
+
+grep -r -i &quot;Асышпионажа.txt&quot;
+cp -f -v af6a71e6-47e7-4aa2-88f0-31173475669a.note /media/hdd/git/confs/gnote/
+-i</note-content>
+</text><last-change-date>2023-11-28T09:41:58,457419Z</last-change-date><last-metadata-change-date>2023-11-28T09:41:58,457419Z</last-metadata-change-date><create-date>2023-11-25T07:43:36,685806Z</create-date><cursor-position>1573</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
 

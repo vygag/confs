@@ -2,7 +2,7 @@
 <note version="0.3" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size" xmlns="http://beatniksoftware.com/tomboy"><title>ffmpeg</title><text xml:space="preserve"><note-content version="0.1" xmlns:link="http://beatniksoftware.com/tomboy/link" xmlns:size="http://beatniksoftware.com/tomboy/size">ffmpeg
 
 ffmpeg -i СЯЙВО.mp4 Сяйво.mp3
-ffmpeg -i &quot;Коли мине війна&quot;.mp4 &quot;Коли мине війна&quot;.mp3
+ffmpeg -i &quot;Instagram alina_grosu stories&quot;.mp4 &quot;Instagram alina_grosu stories&quot;.mp3
 
 ffmpeg -i Рушничок.mp4 -ss 00:00:22 -to 00:03:53 -c copy Рушничок_1.mp4
 
@@ -30,5 +30,5 @@ ffmpeg -hwaccel auto -channel_layout stereo -i входной_файл.mkv -ss 0
 ffmpeg -hwaccel auto -channel_layout stereo -i входной_файл.mp4  -ss 00:00:10 -to 00:00:12 -c copy -map 0 -avoid_negative_ts 1 -copyts -start_at_zero -y выходной_файл.mp4
 
 ffmpeg -i parusa.mkv -s 1280x720 alparusa.mkv</note-content>
-</text><last-change-date>2023-11-04T09:11:19,261731Z</last-change-date><last-metadata-change-date>2023-11-04T09:11:19,261731Z</last-metadata-change-date><create-date>2021-10-14T03:39:23,000000Z</create-date><cursor-position>38</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+</text><last-change-date>2023-12-03T08:58:56,876209Z</last-change-date><last-metadata-change-date>2023-12-03T08:58:56,876209Z</last-metadata-change-date><create-date>2021-10-14T03:39:23,000000Z</create-date><cursor-position>38</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
 

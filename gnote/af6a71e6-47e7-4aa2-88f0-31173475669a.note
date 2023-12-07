@@ -6,7 +6,8 @@ exit
 
 blb2txt.exe -f *.fb2 -sn -es 1 -rs -rh -rl -rp -rc -ocr -ap -e utf8
 blb2txt.exe -f speznaz.pdf -sn -es 1 -rs -rh -rl -rp -rc -ocr -ap -e utf8
-blb2txt.exe -f Асышпионажа.txt -rp -rsb
+blb2txt.exe -f ДожатьРоссию.txt -rp -rsb
+blb2txt.exe -f *.txt -rp -rsb
 
 -f   speznaz.pdf  *.fb2 
 -fl  &lt;имя_файла&gt;    Открыть файл со списком текстовых файлов
@@ -43,5 +44,5 @@ blb2txt.exe -f Асышпионажа.txt -rp -rsb
 -rab                Удалить текст внутри &lt;угловых скобок&gt;
 -rrb                Удалить текст внутри (круглых скобок)
 </note-content>
-</text><last-change-date>2023-11-28T09:13:08,655993Z</last-change-date><last-metadata-change-date>2023-11-28T09:13:08,655993Z</last-metadata-change-date><create-date>2023-06-18T14:38:29,856279Z</create-date><cursor-position>230</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+</text><last-change-date>2023-11-28T13:39:13,904908Z</last-change-date><last-metadata-change-date>2023-11-28T13:39:13,904908Z</last-metadata-change-date><create-date>2023-06-18T14:38:29,856279Z</create-date><cursor-position>1264</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
 

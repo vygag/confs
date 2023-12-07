@@ -22,5 +22,5 @@ tshark -r wlan.pcap -z endpoints,wlan -q | head
 tshark -r color.pcap --color
 tshark -R &quot;правило&quot; -r &quot;путь к файлу&quot;
 tshark -R &quot;ip.addr == 192.168.0.1&quot; -r /tmp/capture.cap</note-content>
-</text><last-change-date>2023-01-05T02:12:18,949693Z</last-change-date><last-metadata-change-date>2023-01-05T02:12:18,949693Z</last-metadata-change-date><create-date>2022-12-30T05:54:55,772645Z</create-date><cursor-position>6</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+</text><last-change-date>2023-01-05T02:12:18,949693Z</last-change-date><last-metadata-change-date>2023-01-05T02:12:18,949693Z</last-metadata-change-date><create-date>2022-12-30T05:54:55,772645Z</create-date><cursor-position>6</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
 

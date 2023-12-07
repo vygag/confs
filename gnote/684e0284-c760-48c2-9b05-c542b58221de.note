@@ -45,7 +45,7 @@ gnash &quot;Найди выход из комнаты.swf&quot;
 for i in *.wav; do lame -b 128 $i; done
 ls -1 -R &gt; abook
 find /media/bb28f8fe-e6cb-4dab-ba20-1b13f4ac25ab/ -iname &quot;*keys.man*&quot;
-find -iname &quot;*цыганова*&quot;
+find -iname &quot;*hdisks*&quot;
 grep -i 'lastwallpaper' /home/vyga/Загрузки/hdisks/*
 grep -r -i &quot;terminus&quot;
 blb2txt.exe -f speznaz.pdf -rs -rh -rl -rp -rc -rpn -ocr -ls -ap -sn -es 1 -in 2
@@ -60,5 +60,5 @@ sudo chown -R vyga:vyga /home/vyga/.fluxbox
 https://russianblogs.com/article/6029398458/
 // Удалить пробел и клавишу TAB в начале каждой строки
 sed 's/^[ \t]*//g' style.fl &gt; style.fl2</note-content>
-</text><last-change-date>2023-11-26T14:05:09,894393Z</last-change-date><last-metadata-change-date>2023-11-26T14:05:09,894393Z</last-metadata-change-date><create-date>2021-09-03T06:18:19,000000Z</create-date><cursor-position>1403</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
+</text><last-change-date>2023-11-29T08:26:53,381023Z</last-change-date><last-metadata-change-date>2023-11-29T08:26:53,381023Z</last-metadata-change-date><create-date>2021-09-03T06:18:19,000000Z</create-date><cursor-position>1446</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:Команды</tag></tags></note>
 

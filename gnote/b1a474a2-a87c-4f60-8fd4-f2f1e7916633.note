@@ -11,5 +11,5 @@ iw dev
 ip link set wlan0 down
 iw wlan0 set type managed
 ip link set wlan0 up</note-content>
-</text><last-change-date>2023-05-16T00:33:54,122272Z</last-change-date><last-metadata-change-date>2023-05-16T00:33:54,122272Z</last-metadata-change-date><create-date>2022-12-30T05:55:47,322714Z</create-date><cursor-position>170</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>817</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
+</text><last-change-date>2023-05-16T00:33:54,122272Z</last-change-date><last-metadata-change-date>2023-05-16T00:33:54,122272Z</last-metadata-change-date><create-date>2022-12-30T05:55:47,322714Z</create-date><cursor-position>170</cursor-position><selection-bound-position>-1</selection-bound-position><width>705</width><height>816</height><tags><tag>system:notebook:wi-fi</tag></tags></note>
 
